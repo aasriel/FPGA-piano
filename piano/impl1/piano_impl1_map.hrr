@@ -1,0 +1,343 @@
+---------------------------------------------------
+Report for cell piano
+   Instance path: piano
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1285.00        100.0
+                                  LUT4	    1517.00        100.0
+                                 IOBUF	         21        100.0
+                                PFUREG	       1123        100.0
+                                RIPPLE	        520        100.0
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               speaker	          1        45.8
+                               key_U21	          1         2.5
+                               key_U26	          1         2.5
+                               key_U27	          1         2.4
+                               key_U24	          1         2.2
+                               key_U25	          1         2.2
+                               key_U22	          1         2.2
+                               key_U23	          1         2.2
+                               key_U17	          1         2.4
+                               key_U19	          1         2.2
+                               key_U20	          1         2.2
+                               key_U18	          1         2.5
+                               key_U14	          1         2.5
+                               key_U15	          1         2.5
+                               key_U16	          1         2.4
+                               key_U13	          1         2.4
+                                   key	          1         2.2
+                                buzzer	          1         6.8
+                               clk_pll	          1         0.0
+---------------------------------------------------
+Report for cell speaker
+   Instance path: piano/u_speaker
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     588.75        45.8
+                                  LUT4	     755.33        49.8
+                                PFUREG	        463        41.2
+                                RIPPLE	        196        37.7
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           sin_rom_U12	          1         0.0
+                               sin_rom	          1         0.0
+                                DDS_U3	          1         1.7
+                                DDS_U9	          1         1.9
+                                DDS_U7	          1         2.9
+                                DDS_U8	          1         1.4
+                                DDS_U5	          1         1.8
+                                DDS_U6	          1         1.7
+                                DDS_U4	          1         2.1
+                                   DDS	          1         1.4
+                                DDS_U1	          1         1.7
+                               DDS_U11	          1         1.7
+                                DDS_U2	          1         1.7
+                               DDS_U10	          1         1.5
+                                DDS_U0	          1         1.5
+---------------------------------------------------
+Report for cell DDS
+   Instance path: piano/u_speaker/u_DDS_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.25         1.4
+                                PFUREG	         27         2.4
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U0
+   Instance path: piano/u_speaker/u_DDS_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      19.00         1.5
+                                PFUREG	         27         2.4
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U1
+   Instance path: piano/u_speaker/u_DDS_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.42         1.7
+                                PFUREG	         32         2.8
+                                RIPPLE	         13         2.5
+---------------------------------------------------
+Report for cell DDS_U2
+   Instance path: piano/u_speaker/u_DDS_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.83         1.7
+                                  LUT4	       5.00         0.3
+                                PFUREG	         29         2.6
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U3
+   Instance path: piano/u_speaker/u_DDS_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.67         1.7
+                                  LUT4	       4.00         0.3
+                                PFUREG	         30         2.7
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U4
+   Instance path: piano/u_speaker/u_DDS_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.42         2.1
+                                  LUT4	       5.00         0.3
+                                PFUREG	         34         3.0
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell DDS_U5
+   Instance path: piano/u_speaker/u_DDS_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.58         1.8
+                                  LUT4	       4.00         0.3
+                                PFUREG	         33         2.9
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell DDS_U6
+   Instance path: piano/u_speaker/u_DDS_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.67         1.7
+                                  LUT4	       5.00         0.3
+                                PFUREG	         31         2.8
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U7
+   Instance path: piano/u_speaker/u_DDS_1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.67         2.9
+                                  LUT4	      15.00         1.0
+                                PFUREG	         36         3.2
+                                RIPPLE	         22         4.2
+---------------------------------------------------
+Report for cell DDS_U8
+   Instance path: piano/u_speaker/u_DDS_13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.50         1.4
+                                  LUT4	       1.00         0.1
+                                PFUREG	         24         2.1
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U9
+   Instance path: piano/u_speaker/u_DDS_12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.33         1.9
+                                  LUT4	       4.00         0.3
+                                PFUREG	         32         2.8
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell DDS_U10
+   Instance path: piano/u_speaker/u_DDS_11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      19.92         1.5
+                                  LUT4	       1.00         0.1
+                                PFUREG	         34         3.0
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell DDS_U11
+   Instance path: piano/u_speaker/u_DDS_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.17         1.7
+                                  LUT4	       4.00         0.3
+                                PFUREG	         33         2.9
+                                RIPPLE	         12         2.3
+---------------------------------------------------
+Report for cell sin_rom
+   Instance path: piano/u_speaker/sin2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          3        50.0
+---------------------------------------------------
+Report for cell sin_rom_U12
+   Instance path: piano/u_speaker/sin1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          3        50.0
+---------------------------------------------------
+Report for cell key
+   Instance path: piano/u_key_state
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.50         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell buzzer
+   Instance path: piano/u_buzzer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      87.33         6.8
+                                  LUT4	     133.67         8.8
+                                PFUREG	         39         3.5
+                                RIPPLE	         20         3.8
+---------------------------------------------------
+Report for cell key_U17
+   Instance path: piano/u_key_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.25         2.4
+                                  LUT4	      29.00         1.9
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U14
+   Instance path: piano/u_key_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.00         2.5
+                                  LUT4	      30.67         2.0
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U27
+   Instance path: piano/u_key_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.58         2.4
+                                  LUT4	      27.67         1.8
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U26
+   Instance path: piano/u_key_11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.00         2.5
+                                  LUT4	      30.67         2.0
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U25
+   Instance path: piano/u_key_12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.75         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U20
+   Instance path: piano/u_key_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.75         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U24
+   Instance path: piano/u_key_13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.75         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U13
+   Instance path: piano/u_key_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.08         2.4
+                                  LUT4	      28.67         1.9
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U21
+   Instance path: piano/u_key_1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.25         2.5
+                                  LUT4	      31.00         2.0
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U15
+   Instance path: piano/u_key_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.17         2.5
+                                  LUT4	      30.67         2.0
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U16
+   Instance path: piano/u_key_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.33         2.4
+                                  LUT4	      27.00         1.8
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U19
+   Instance path: piano/u_key_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.83         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U22
+   Instance path: piano/u_key_15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.67         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell key_U18
+   Instance path: piano/u_key_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.58         2.5
+                                  LUT4	      29.67         2.0
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3
+---------------------------------------------------
+Report for cell clk_pll
+   Instance path: piano/u_clk_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell key_U23
+   Instance path: piano/u_key_14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.75         2.2
+                                  LUT4	      24.00         1.6
+                                PFUREG	         35         3.1
+                                RIPPLE	         17         3.3

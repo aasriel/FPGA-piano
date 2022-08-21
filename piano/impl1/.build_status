@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1660744575"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1660744581"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1660744587"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1660744591"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1660744596"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1660744516">
+            <Task name="Map" build_result="2" update_result="0" update_time="1660744516"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1660744517"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1660744525"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1660744531"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1660744568">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1660744568"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1660744570"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1660744575"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1660744513">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1660744513"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1660744596"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1660562714"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1660562714"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1660562802"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1660562802"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1660562372"/>
+        </Milestone>
+        <Report name=".vdbs/piano_impl1_map.vdb" last_build_time="1660744516" last_build_size="578429"/>
+        <Report name="IBIS/piano_impl1.ibs" last_build_time="1660744575" last_build_size="66226"/>
+        <Report name="piano_impl1.bgn" last_build_time="1660744596" last_build_size="4604"/>
+        <Report name="piano_impl1.bit" last_build_time="1660744591" last_build_size="47048"/>
+        <Report name="piano_impl1.ior" last_build_time="1660744575" last_build_size="2883"/>
+        <Report name="piano_impl1.jed" last_build_time="1660744596" last_build_size="849646"/>
+        <Report name="piano_impl1.lsedata" last_build_time="1660744505" last_build_size="2632546"/>
+        <Report name="piano_impl1.ncd" last_build_time="1660744568" last_build_size="2472342"/>
+        <Report name="piano_impl1.ngd" last_build_time="1660744513" last_build_size="2033045"/>
+        <Report name="piano_impl1.tw1" last_build_time="1660744517" last_build_size="11330"/>
+        <Report name="piano_impl1.twr" last_build_time="1660744570" last_build_size="54049"/>
+        <Report name="piano_impl1_map.ncd" last_build_time="1660744515" last_build_size="1764253"/>
+        <Report name="piano_impl1_mapvho.sdf" last_build_time="1660744531" last_build_size="1861600"/>
+        <Report name="piano_impl1_mapvho.vho" last_build_time="1660744530" last_build_size="12834546"/>
+        <Report name="piano_impl1_mapvo.sdf" last_build_time="1660744524" last_build_size="1860527"/>
+        <Report name="piano_impl1_mapvo.vo" last_build_time="1660744524" last_build_size="2012419"/>
+        <Report name="piano_impl1_vho.sdf" last_build_time="1660744587" last_build_size="2166971"/>
+        <Report name="piano_impl1_vho.vho" last_build_time="1660744587" last_build_size="13081047"/>
+        <Report name="piano_impl1_vo.sdf" last_build_time="1660744581" last_build_size="2164367"/>
+        <Report name="piano_impl1_vo.vo" last_build_time="1660744581" last_build_size="2069404"/>
+    </Strategy>
+</BuildStatus>

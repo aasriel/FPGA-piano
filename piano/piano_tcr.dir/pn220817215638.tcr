@@ -1,0 +1,5 @@
+#Start recording tcl command: 8/17/2022 21:54:42
+#Project Location: D:/FPGA_Project/lattice_diamond/piano; Project name: piano
+prj_project open "D:/FPGA_Project/lattice_diamond/piano/piano.ldf"
+prj_run Export -impl impl1
+#Stop recording: 8/17/2022 21:56:38

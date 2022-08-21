@@ -1,0 +1,210 @@
+[ START MERGED ]
+clk_N_168 clk
+clk__inv clk
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+u_key_14/sub_10_add_2_1/S0
+u_key_14/sub_10_add_2_1/CI
+u_key_14/sub_10_add_2_33/S1
+u_key_14/sub_10_add_2_33/CO
+u_key_4/sub_10_add_2_1/S0
+u_key_4/sub_10_add_2_1/CI
+u_key_4/sub_10_add_2_33/S1
+u_key_4/sub_10_add_2_33/CO
+u_key_15/sub_10_add_2_1/S0
+u_key_15/sub_10_add_2_1/CI
+u_key_15/sub_10_add_2_33/S1
+u_key_15/sub_10_add_2_33/CO
+u_key_3/sub_10_add_2_33/S1
+u_key_3/sub_10_add_2_33/CO
+u_key_3/sub_10_add_2_1/S0
+u_key_3/sub_10_add_2_1/CI
+cnt_2220_add_4_33/S1
+cnt_2220_add_4_33/CO
+u_key_6/sub_10_add_2_1/S0
+u_key_6/sub_10_add_2_1/CI
+u_key_6/sub_10_add_2_33/S1
+u_key_6/sub_10_add_2_33/CO
+u_key_7/sub_10_add_2_1/S0
+u_key_7/sub_10_add_2_1/CI
+u_key_7/sub_10_add_2_33/S1
+u_key_7/sub_10_add_2_33/CO
+u_key_1/sub_10_add_2_33/S1
+u_key_1/sub_10_add_2_33/CO
+u_key_1/sub_10_add_2_1/S0
+u_key_1/sub_10_add_2_1/CI
+u_key_9/sub_10_add_2_1/S0
+u_key_9/sub_10_add_2_1/CI
+u_key_9/sub_10_add_2_33/S1
+u_key_9/sub_10_add_2_33/CO
+u_key_13/sub_10_add_2_1/S0
+u_key_13/sub_10_add_2_1/CI
+u_key_13/sub_10_add_2_33/S1
+u_key_13/sub_10_add_2_33/CO
+u_key_2/sub_10_add_2_1/S0
+u_key_2/sub_10_add_2_1/CI
+u_key_2/sub_10_add_2_33/S1
+u_key_2/sub_10_add_2_33/CO
+u_key_12/sub_10_add_2_1/S0
+u_key_12/sub_10_add_2_1/CI
+u_key_12/sub_10_add_2_33/S1
+u_key_12/sub_10_add_2_33/CO
+u_key_11/sub_10_add_2_1/S0
+u_key_11/sub_10_add_2_1/CI
+u_key_11/sub_10_add_2_33/S1
+u_key_11/sub_10_add_2_33/CO
+u_key_10/sub_10_add_2_33/S1
+u_key_10/sub_10_add_2_33/CO
+u_key_10/sub_10_add_2_1/S0
+u_key_10/sub_10_add_2_1/CI
+u_key_8/sub_10_add_2_1/S0
+u_key_8/sub_10_add_2_1/CI
+u_key_8/sub_10_add_2_33/S1
+u_key_8/sub_10_add_2_33/CO
+u_key_5/sub_10_add_2_1/S0
+u_key_5/sub_10_add_2_1/CI
+u_key_5/sub_10_add_2_33/S1
+u_key_5/sub_10_add_2_33/CO
+u_buzzer/sub_6_add_2_19/CO
+u_buzzer/sub_6_add_2_1/S0
+u_buzzer/sub_6_add_2_1/CI
+u_buzzer/CNT_2225_add_4_1/S0
+u_buzzer/CNT_2225_add_4_1/CI
+u_buzzer/CNT_2225_add_4_19/S1
+u_buzzer/CNT_2225_add_4_19/CO
+sub_1378_add_2_1/S1
+sub_1378_add_2_1/S0
+sub_1378_add_2_1/CI
+sub_1378_add_2_3/S1
+sub_1378_add_2_3/S0
+sub_1378_add_2_5/S1
+sub_1378_add_2_5/S0
+sub_1378_add_2_7/S1
+sub_1378_add_2_7/S0
+sub_1378_add_2_9/S1
+sub_1378_add_2_9/S0
+sub_1378_add_2_11/S1
+sub_1378_add_2_11/S0
+sub_1378_add_2_13/S1
+sub_1378_add_2_13/S0
+sub_1378_add_2_15/S1
+sub_1378_add_2_15/S0
+sub_1378_add_2_17/S1
+sub_1378_add_2_17/S0
+sub_1378_add_2_19/S0
+sub_1378_add_2_19/CO
+count_note_2222_add_4_1/S0
+count_note_2222_add_4_1/CI
+count_note_2222_add_4_9/S1
+count_note_2222_add_4_9/CO
+cnt_2220_add_4_1/S0
+cnt_2220_add_4_1/CI
+u_key_state/sub_10_add_2_1/S0
+u_key_state/sub_10_add_2_1/CI
+u_key_state/sub_10_add_2_33/S1
+u_key_state/sub_10_add_2_33/CO
+u_speaker/u_DDS_10/add_15_2/S0
+u_speaker/u_DDS_10/add_15_2/CI
+u_speaker/u_DDS_10/add_15_24/S1
+u_speaker/u_DDS_10/add_15_24/CO
+u_speaker/u_DDS_11/add_2214_2/S0
+u_speaker/u_DDS_11/add_2214_2/CI
+u_speaker/u_DDS_11/add_2214_24/CO
+u_speaker/u_DDS_12/add_3786_1/S0
+u_speaker/u_DDS_12/add_3786_1/CI
+u_speaker/u_DDS_12/add_3786_7/CO
+u_speaker/u_DDS_12/count_2230_add_4_2/S0
+u_speaker/u_DDS_12/count_2230_add_4_2/CI
+u_speaker/u_DDS_12/count_2230_add_4_26/S1
+u_speaker/u_DDS_12/count_2230_add_4_26/CO
+u_speaker/u_DDS_13/add_2218_2/S0
+u_speaker/u_DDS_13/add_2218_2/CI
+u_speaker/u_DDS_13/add_2218_24/CO
+u_speaker/u_DDS_1/add_2977_2/S0
+u_speaker/u_DDS_1/add_2977_2/CI
+u_speaker/u_DDS_1/add_2977_8/S1
+u_speaker/u_DDS_1/add_2977_8/CO
+u_speaker/u_DDS_1/add_4165_2/S0
+u_speaker/u_DDS_1/add_4165_2/CI
+u_speaker/u_DDS_1/add_4165_8/S1
+u_speaker/u_DDS_1/add_4165_8/S0
+u_speaker/u_DDS_1/add_4165_10/S0
+u_speaker/u_DDS_1/add_4165_10/CO
+u_speaker/u_DDS_1/count_2226_add_4_2/S0
+u_speaker/u_DDS_1/count_2226_add_4_2/CI
+u_speaker/u_DDS_1/count_2226_add_4_26/S1
+u_speaker/u_DDS_1/count_2226_add_4_26/CO
+u_speaker/u_DDS_2/add_2209_2/S0
+u_speaker/u_DDS_2/add_2209_2/CI
+u_speaker/u_DDS_2/add_2209_24/CO
+u_speaker/u_DDS_3/add_3687_1/S0
+u_speaker/u_DDS_3/add_3687_1/CI
+u_speaker/u_DDS_3/add_3687_7/CO
+u_speaker/u_DDS_3/count_2227_add_4_2/S0
+u_speaker/u_DDS_3/count_2227_add_4_2/CI
+u_speaker/u_DDS_3/count_2227_add_4_26/S1
+u_speaker/u_DDS_3/count_2227_add_4_26/CO
+u_speaker/u_DDS_4/add_3609_1/S0
+u_speaker/u_DDS_4/add_3609_1/CI
+u_speaker/u_DDS_4/add_3609_7/CO
+u_speaker/u_DDS_4/count_2228_add_4_2/S0
+u_speaker/u_DDS_4/count_2228_add_4_2/CI
+u_speaker/u_DDS_4/count_2228_add_4_26/S1
+u_speaker/u_DDS_4/count_2228_add_4_26/CO
+u_speaker/u_DDS_5/add_2210_2/S0
+u_speaker/u_DDS_5/add_2210_2/CI
+u_speaker/u_DDS_5/add_2210_24/CO
+u_speaker/u_DDS_6/add_15_2/S0
+u_speaker/u_DDS_6/add_15_2/CI
+u_speaker/u_DDS_6/add_15_24/S1
+u_speaker/u_DDS_6/add_15_24/CO
+u_speaker/u_DDS_7/count_2229_add_4_2/S0
+u_speaker/u_DDS_7/count_2229_add_4_2/CI
+u_speaker/u_DDS_7/count_2229_add_4_26/S1
+u_speaker/u_DDS_7/count_2229_add_4_26/CO
+u_speaker/u_DDS_8/add_2211_2/S0
+u_speaker/u_DDS_8/add_2211_2/CI
+u_speaker/u_DDS_8/add_2211_24/CO
+u_speaker/u_DDS_9/add_2212_2/S0
+u_speaker/u_DDS_9/add_2212_2/CI
+u_speaker/u_DDS_9/add_2212_24/CO
+u_speaker/add_2219_cout/S1
+u_speaker/add_2219_cout/CO
+u_speaker/add_2216_2/S0
+u_speaker/add_2216_2/CI
+u_speaker/add_2216_14/CO
+u_speaker/add_2219_2/S0
+u_speaker/add_2219_2/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Wed Aug 17 21:55:15 2022
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "key[10]" SITE "L3" ;
+LOCATE COMP "key[9]" SITE "K3" ;
+LOCATE COMP "key[11]" SITE "N5" ;
+LOCATE COMP "key[12]" SITE "P6" ;
+LOCATE COMP "key[13]" SITE "N6" ;
+LOCATE COMP "key[14]" SITE "P7" ;
+LOCATE COMP "rst_n" SITE "N14" ;
+LOCATE COMP "sys_clk" SITE "C1" ;
+LOCATE COMP "pwm_out2" SITE "N8" ;
+LOCATE COMP "pwm_out1" SITE "P8" ;
+LOCATE COMP "key[8]" SITE "K2" ;
+LOCATE COMP "key[7]" SITE "J3" ;
+LOCATE COMP "key[6]" SITE "J2" ;
+LOCATE COMP "key[5]" SITE "H3" ;
+LOCATE COMP "key[4]" SITE "G3" ;
+LOCATE COMP "key[3]" SITE "F3" ;
+LOCATE COMP "key[2]" SITE "E3" ;
+LOCATE COMP "key[1]" SITE "B8" ;
+LOCATE COMP "key[0]" SITE "C8" ;
+LOCATE COMP "key_pa" SITE "N4" ;
+LOCATE COMP "key_state" SITE "L14" ;
+FREQUENCY NET "clk" 48.000000 MHz ;
+FREQUENCY NET "sys_clk_c" 12.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

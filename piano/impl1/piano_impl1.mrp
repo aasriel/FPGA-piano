@@ -1,0 +1,2052 @@
+
+            Lattice Mapping Report File for Design Module 'piano'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     piano_impl1.ngd -o piano_impl1_map.ncd -pr piano_impl1.prf -mp
+     piano_impl1.mrp -lpf
+     D:/FPGA_Project/lattice_diamond/piano/impl1/piano_impl1.lpf -lpf
+     D:/FPGA_Project/lattice_diamond/piano/piano.lpf -c 0 -gui -msgset
+     D:/FPGA_Project/lattice_diamond/piano/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  08/17/22  21:55:13
+
+Design Summary
+--------------
+
+   Number of registers:   1123 out of  4635 (24%)
+      PFU registers:         1123 out of  4320 (26%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:      1285 out of  2160 (59%)
+      SLICEs as Logic/ROM:   1285 out of  2160 (59%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        520 out of  2160 (24%)
+   Number of LUT4s:        2557 out of  4320 (59%)
+      Number used as logic LUTs:        1517
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      1040
+      Number used as shift registers:     0
+   Number of PIO sites used: 21 + 4(JTAG) out of 105 (24%)
+   Number of block RAMs:  6 out of 10 (60%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  4
+     Net u_speaker/rom1_4__N_289: 4 loads, 4 rising, 0 falling (Driver:
+     u_speaker/i12272_2_lut )
+
+                                    Page 1
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Design Summary (cont)
+---------------------
+     Net u_speaker/rom2_4__N_297: 4 loads, 4 rising, 0 falling (Driver:
+     u_speaker/i2_3_lut )
+     Net clk: 682 loads, 7 rising, 675 falling (Driver: u_clk_pll/PLLInst_0 )
+     Net sys_clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO sys_clk )
+   Number of Clock Enables:  71
+     Net clk_N_168_enable_456: 3 loads, 3 LSLICEs
+     Net clk_N_168_enable_534: 3 loads, 3 LSLICEs
+     Net stat: 2 loads, 2 LSLICEs
+     Net u_speaker/clk_N_168_enable_524: 1 loads, 1 LSLICEs
+     Net u_speaker/clk_N_168_enable_523: 1 loads, 1 LSLICEs
+     Net clk_N_168_enable_512: 1 loads, 1 LSLICEs
+     Net u_speaker/en_1: 6 loads, 0 LSLICEs
+     Net u_speaker/en_0: 6 loads, 0 LSLICEs
+     Net clk_N_168_enable_507: 1 loads, 1 LSLICEs
+     Net clk_N_168_enable_518: 1 loads, 1 LSLICEs
+     Net u_key_state/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_state/clk_N_168_enable_505: 15 loads, 15 LSLICEs
+     Net u_key_state/clk_N_168_enable_493: 4 loads, 4 LSLICEs
+     Net clk_N_168_enable_533: 5 loads, 5 LSLICEs
+     Net u_buzzer/clk_N_168_enable_15: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_511: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_508: 2 loads, 2 LSLICEs
+     Net u_buzzer/clk_N_168_enable_509: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_510: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_513: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_514: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_515: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_516: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_517: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_520: 2 loads, 2 LSLICEs
+     Net u_buzzer/clk_N_168_enable_522: 2 loads, 2 LSLICEs
+     Net u_key_5/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_5/clk_N_168_enable_325: 15 loads, 15 LSLICEs
+     Net u_key_5/clk_N_168_enable_320: 4 loads, 4 LSLICEs
+     Net u_key_8/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_8/clk_N_168_enable_232: 15 loads, 15 LSLICEs
+     Net u_key_8/clk_N_168_enable_227: 4 loads, 4 LSLICEs
+     Net u_key_10/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_10/clk_N_168_enable_170: 15 loads, 15 LSLICEs
+     Net u_key_10/clk_N_168_enable_165: 4 loads, 4 LSLICEs
+     Net u_key_11/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_11/clk_N_168_enable_139: 15 loads, 15 LSLICEs
+     Net u_key_11/clk_N_168_enable_134: 4 loads, 4 LSLICEs
+     Net u_key_12/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_12/clk_N_168_enable_108: 15 loads, 15 LSLICEs
+     Net u_key_12/clk_N_168_enable_103: 4 loads, 4 LSLICEs
+     Net u_key_2/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_2/clk_N_168_enable_419: 15 loads, 15 LSLICEs
+     Net u_key_2/clk_N_168_enable_414: 4 loads, 4 LSLICEs
+     Net u_key_13/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_13/clk_N_168_enable_77: 15 loads, 15 LSLICEs
+     Net u_key_13/clk_N_168_enable_72: 4 loads, 4 LSLICEs
+     Net u_key_9/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_9/clk_N_168_enable_201: 15 loads, 15 LSLICEs
+     Net u_key_9/clk_N_168_enable_196: 4 loads, 4 LSLICEs
+     Net u_key_1/key_flag_N_639: 1 loads, 1 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Design Summary (cont)
+---------------------
+     Net u_key_1/clk_N_168_enable_450: 15 loads, 15 LSLICEs
+     Net u_key_1/clk_N_168_enable_445: 4 loads, 4 LSLICEs
+     Net u_key_7/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_7/clk_N_168_enable_263: 15 loads, 15 LSLICEs
+     Net u_key_7/clk_N_168_enable_258: 4 loads, 4 LSLICEs
+     Net u_key_6/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_6/clk_N_168_enable_294: 15 loads, 15 LSLICEs
+     Net u_key_6/clk_N_168_enable_289: 4 loads, 4 LSLICEs
+     Net u_key_3/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_3/clk_N_168_enable_387: 15 loads, 15 LSLICEs
+     Net u_key_3/clk_N_168_enable_382: 4 loads, 4 LSLICEs
+     Net u_key_15/clk_N_168_enable_462: 4 loads, 4 LSLICEs
+     Net u_key_15/clk_N_168_enable_531: 15 loads, 15 LSLICEs
+     Net u_key_15/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_4/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_4/clk_N_168_enable_356: 15 loads, 15 LSLICEs
+     Net u_key_4/clk_N_168_enable_351: 4 loads, 4 LSLICEs
+     Net u_key_14/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_14/clk_N_168_enable_46: 15 loads, 15 LSLICEs
+     Net u_key_14/clk_N_168_enable_41: 4 loads, 4 LSLICEs
+   Number of LSRs:  31
+     Net n9292: 2 loads, 2 LSLICEs
+     Net u_speaker/pwm_out2_N_125: 179 loads, 179 LSLICEs
+     Net stat: 1 loads, 1 LSLICEs
+     Net n18644: 1 loads, 1 LSLICEs
+     Net u_speaker/n18622: 1 loads, 1 LSLICEs
+     Net u_speaker/n16916: 1 loads, 1 LSLICEs
+     Net u_speaker/n18643: 1 loads, 1 LSLICEs
+     Net u_speaker/n18621: 1 loads, 1 LSLICEs
+     Net u_speaker/n16930: 1 loads, 1 LSLICEs
+     Net u_speaker/n10964: 11 loads, 11 LSLICEs
+     Net n10972: 1 loads, 1 LSLICEs
+     Net u_key_state/n18788: 16 loads, 16 LSLICEs
+     Net n10969: 17 loads, 17 LSLICEs
+     Net n10968: 5 loads, 5 LSLICEs
+     Net u_buzzer/pwm_out1_N_122: 9 loads, 9 LSLICEs
+     Net u_buzzer/n15951: 1 loads, 1 LSLICEs
+     Net u_key_5/n18798: 16 loads, 16 LSLICEs
+     Net u_key_8/n18795: 16 loads, 16 LSLICEs
+     Net u_key_10/n18793: 16 loads, 16 LSLICEs
+     Net u_key_11/n18792: 16 loads, 16 LSLICEs
+     Net u_key_12/n18791: 16 loads, 16 LSLICEs
+     Net u_key_2/n18801: 16 loads, 16 LSLICEs
+     Net u_key_13/n18790: 16 loads, 16 LSLICEs
+     Net u_key_9/n18794: 16 loads, 16 LSLICEs
+     Net u_key_1/n18802: 16 loads, 16 LSLICEs
+     Net u_key_7/n18796: 16 loads, 16 LSLICEs
+     Net u_key_6/n18797: 16 loads, 16 LSLICEs
+     Net u_key_3/n18800: 16 loads, 16 LSLICEs
+     Net u_key_15/n18728: 16 loads, 16 LSLICEs
+     Net u_key_4/n18799: 16 loads, 16 LSLICEs
+     Net u_key_14/n18789: 16 loads, 16 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n19846: 436 loads
+     Net u_speaker/pwm_out2_N_125: 179 loads
+
+                                    Page 3
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Design Summary (cont)
+---------------------
+     Net count_note_2: 104 loads
+     Net count_note_1: 103 loads
+     Net count_note_3: 98 loads
+     Net count_note_0: 94 loads
+     Net count_note_4: 60 loads
+     Net rom2_1: 53 loads
+     Net rom2_0: 49 loads
+     Net u_speaker/rom2_2: 43 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| key[10]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[9]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[11]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[12]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[13]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[14]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sys_clk             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pwm_out2            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pwm_out1            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[8]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[7]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[6]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[5]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+IO (PIO) Attributes (cont)
+--------------------------
+| key[4]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[3]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[2]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[1]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[0]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key_pa              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key_state           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal clk_N_168 was merged into signal clk
+Signal clk__inv was merged into signal clk
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal u_key_14/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal u_key_14/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal u_key_14/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_14/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_key_4/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_4/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_4/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_4/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_15/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal u_key_15/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal u_key_15/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_15/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_key_3/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_3/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_3/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_3/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal cnt_2220_add_4_33/S1 undriven or does not drive anything - clipped.
+Signal cnt_2220_add_4_33/CO undriven or does not drive anything - clipped.
+Signal u_key_6/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_6/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_6/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+
+                                    Page 5
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Removed logic (cont)
+--------------------
+Signal u_key_6/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_7/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_7/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_7/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_7/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_1/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_1/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_1/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_1/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_9/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_9/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_9/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_9/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_13/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal u_key_13/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal u_key_13/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_13/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_key_2/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_2/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_2/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_2/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_12/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal u_key_12/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal u_key_12/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_12/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_key_11/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal u_key_11/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal u_key_11/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_11/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_key_10/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_10/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_key_10/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+
+                                    Page 6
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Removed logic (cont)
+--------------------
+Signal u_key_10/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal u_key_8/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_8/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_8/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_8/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_key_5/sub_10_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_key_5/sub_10_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_key_5/sub_10_add_2_33/S1 undriven or does not drive anything - clipped.
+     
+Signal u_key_5/sub_10_add_2_33/CO undriven or does not drive anything - clipped.
+     
+Signal u_buzzer/sub_6_add_2_19/CO undriven or does not drive anything - clipped.
+     
+Signal u_buzzer/sub_6_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal u_buzzer/sub_6_add_2_1/CI undriven or does not drive anything - clipped.
+Signal u_buzzer/CNT_2225_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_buzzer/CNT_2225_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_buzzer/CNT_2225_add_4_19/S1 undriven or does not drive anything -
+     clipped.
+Signal u_buzzer/CNT_2225_add_4_19/CO undriven or does not drive anything -
+     clipped.
+Signal sub_1378_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_9/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_11/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_11/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_13/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_13/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_15/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_15/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_17/S1 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_17/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_19/S0 undriven or does not drive anything - clipped.
+Signal sub_1378_add_2_19/CO undriven or does not drive anything - clipped.
+Signal count_note_2222_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal count_note_2222_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Signal count_note_2222_add_4_9/S1 undriven or does not drive anything - clipped.
+     
+Signal count_note_2222_add_4_9/CO undriven or does not drive anything - clipped.
+     
+Signal cnt_2220_add_4_1/S0 undriven or does not drive anything - clipped.
+
+                                    Page 7
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Removed logic (cont)
+--------------------
+Signal cnt_2220_add_4_1/CI undriven or does not drive anything - clipped.
+Signal u_key_state/sub_10_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_key_state/sub_10_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_key_state/sub_10_add_2_33/S1 undriven or does not drive anything -
+     clipped.
+Signal u_key_state/sub_10_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_10/add_15_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_10/add_15_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_10/add_15_24/S1 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_10/add_15_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_11/add_2214_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_11/add_2214_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_11/add_2214_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_12/add_3786_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_12/add_3786_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_12/add_3786_7/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_12/count_2230_add_4_2/S0 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_12/count_2230_add_4_2/CI undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_12/count_2230_add_4_26/S1 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_12/count_2230_add_4_26/CO undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_13/add_2218_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_13/add_2218_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_13/add_2218_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_2977_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_2977_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_2977_8/S1 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_2977_8/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_4165_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_4165_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_4165_8/S1 undriven or does not drive anything -
+
+                                    Page 8
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal u_speaker/u_DDS_1/add_4165_8/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_4165_10/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/add_4165_10/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_1/count_2226_add_4_2/S0 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_1/count_2226_add_4_2/CI undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_1/count_2226_add_4_26/S1 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_1/count_2226_add_4_26/CO undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_2/add_2209_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_2/add_2209_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_2/add_2209_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_3/add_3687_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_3/add_3687_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_3/add_3687_7/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_3/count_2227_add_4_2/S0 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_3/count_2227_add_4_2/CI undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_3/count_2227_add_4_26/S1 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_3/count_2227_add_4_26/CO undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_4/add_3609_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_4/add_3609_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_4/add_3609_7/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_4/count_2228_add_4_2/S0 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_4/count_2228_add_4_2/CI undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_4/count_2228_add_4_26/S1 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_4/count_2228_add_4_26/CO undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_5/add_2210_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_5/add_2210_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_5/add_2210_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_6/add_15_2/S0 undriven or does not drive anything -
+
+                                    Page 9
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal u_speaker/u_DDS_6/add_15_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_6/add_15_24/S1 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_6/add_15_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_7/count_2229_add_4_2/S0 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_7/count_2229_add_4_2/CI undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_7/count_2229_add_4_26/S1 undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_7/count_2229_add_4_26/CO undriven or does not drive
+     anything - clipped.
+Signal u_speaker/u_DDS_8/add_2211_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_8/add_2211_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_8/add_2211_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_9/add_2212_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_9/add_2212_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_speaker/u_DDS_9/add_2212_24/CO undriven or does not drive anything -
+     clipped.
+Signal u_speaker/add_2219_cout/S1 undriven or does not drive anything - clipped.
+     
+Signal u_speaker/add_2219_cout/CO undriven or does not drive anything - clipped.
+     
+Signal u_speaker/add_2216_2/S0 undriven or does not drive anything - clipped.
+Signal u_speaker/add_2216_2/CI undriven or does not drive anything - clipped.
+Signal u_speaker/add_2216_14/CO undriven or does not drive anything - clipped.
+Signal u_speaker/add_2219_2/S0 undriven or does not drive anything - clipped.
+Signal u_speaker/add_2219_2/CI undriven or does not drive anything - clipped.
+Block u_clk_pll/i12987 was optimized away.
+Block u_speaker/u_DDS_13/clk_I_0_1_lut_rep_638 was optimized away.
+Block i1 was optimized away.
+Block i2 was optimized away.
+
+Memory Usage
+------------
+
+    
+         
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO. 
+    /u_speaker/sin1:
+    EBRs: 3
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR sin_rom_0_2_0:  TYPE= DP8KC,  Width_A= 4,  Depth_A= 2048,
+         REGMODE_A= OUTREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+
+                                   Page 10
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+Memory Usage (cont)
+-------------------
+         GSR= ENABLED,  MEM_INIT_FILE= sin_2048.mem,  MEM_LPC_FILE= sin_rom.lpc
+    -Contains EBR sin_rom_0_1_1:  TYPE= DP8KC,  Width_A= 4,  Depth_A= 2048,
+         REGMODE_A= OUTREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= sin_2048.mem,  MEM_LPC_FILE= sin_rom.lpc
+    -Contains EBR sin_rom_0_0_2:  TYPE= DP8KC,  Width_A= 4,  Depth_A= 2048,
+         REGMODE_A= OUTREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= sin_2048.mem,  MEM_LPC_FILE= sin_rom.lpc
+/u_speaker/sin2:
+    EBRs: 3
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR sin_rom_0_2_0:  TYPE= DP8KC,  Width_A= 4,  Depth_A= 2048,
+         REGMODE_A= OUTREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= sin_2048.mem,  MEM_LPC_FILE= sin_rom.lpc
+    -Contains EBR sin_rom_0_0_2:  TYPE= DP8KC,  Width_A= 4,  Depth_A= 2048,
+         REGMODE_A= OUTREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= sin_2048.mem,  MEM_LPC_FILE= sin_rom.lpc
+    -Contains EBR sin_rom_0_1_1:  TYPE= DP8KC,  Width_A= 4,  Depth_A= 2048,
+         REGMODE_A= OUTREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= sin_2048.mem,  MEM_LPC_FILE= sin_rom.lpc
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u_clk_pll/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      sys_clk_c
+  Output Clock(P):                         NODE     clk
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+
+                                   Page 11
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+PLL/DLL Summary (cont)
+----------------------
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      12.0000
+  Output Clock(P) Frequency (MHz):                  48.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    4
+  CLKOP Divider:                                    11
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+ASIC Components
+---------------
+
+Instance Name: u_speaker/sin2/sin_rom_0_2_0
+         Type: DP8KC
+
+                                   Page 12
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+ASIC Components (cont)
+----------------------
+Instance Name: u_speaker/sin2/sin_rom_0_0_2
+         Type: DP8KC
+Instance Name: u_speaker/sin2/sin_rom_0_1_1
+         Type: DP8KC
+Instance Name: u_speaker/sin1/sin_rom_0_2_0
+         Type: DP8KC
+Instance Name: u_speaker/sin1/sin_rom_0_1_1
+         Type: DP8KC
+Instance Name: u_speaker/sin1/sin_rom_0_0_2
+         Type: DP8KC
+Instance Name: u_clk_pll/PLLInst_0
+         Type: EHXPLLJ
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 526 
+
+     Type and instance name of component: 
+   Register : clk_beat_75
+   Register : note_i0
+   Register : beat_i4
+   Register : u_speaker/rom1_4__I_6_i1
+   Register : u_speaker/rom2_4__I_7_i1
+   Register : u_speaker/u_count1_i1
+   Register : u_speaker/PWM_DDS_accumulator_i0
+   Register : u_speaker/PWM_in__i0
+   Register : u_speaker/yinjie_box_i0
+   Register : u_speaker/yinjie_box_i1
+   Register : u_speaker/rom1_4__I_6_i2
+   Register : u_speaker/rom1_4__I_6_i3
+   Register : u_speaker/rom1_4__I_6_i4
+   Register : u_speaker/rom2_4__I_7_i2
+   Register : u_speaker/rom2_4__I_7_i3
+   Register : u_speaker/rom2_4__I_7_i4
+   Register : u_speaker/u_count1_i11
+   Register : u_speaker/u_count1_i10
+   Register : u_speaker/u_count1_i9
+
+                                   Page 13
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_count1_i8
+   Register : u_speaker/u_count1_i7
+   Register : u_speaker/u_count1_i6
+   Register : u_speaker/u_count1_i5
+   Register : u_speaker/u_count1_i4
+   Register : u_speaker/u_count1_i3
+   Register : u_speaker/u_count1_i2
+   Register : u_speaker/PWM_in__i12
+   Register : u_speaker/PWM_in__i11
+   Register : u_speaker/PWM_in__i10
+   Register : u_speaker/PWM_in__i9
+   Register : u_speaker/PWM_in__i8
+   Register : u_speaker/PWM_in__i7
+   Register : u_speaker/PWM_in__i6
+   Register : u_speaker/PWM_in__i5
+   Register : u_speaker/PWM_in__i4
+   Register : u_speaker/PWM_in__i3
+   Register : u_speaker/PWM_in__i2
+   Register : u_speaker/PWM_in__i1
+   Register : u_speaker/PWM_DDS_accumulator_i13
+   Register : u_speaker/PWM_DDS_accumulator_i12
+   Register : u_speaker/PWM_DDS_accumulator_i11
+   Register : u_speaker/PWM_DDS_accumulator_i10
+   Register : u_speaker/PWM_DDS_accumulator_i9
+   Register : u_speaker/PWM_DDS_accumulator_i8
+   Register : u_speaker/PWM_DDS_accumulator_i7
+   Register : u_speaker/PWM_DDS_accumulator_i6
+   Register : u_speaker/PWM_DDS_accumulator_i5
+   Register : u_speaker/PWM_DDS_accumulator_i4
+   Register : u_speaker/PWM_DDS_accumulator_i3
+   Register : u_speaker/PWM_DDS_accumulator_i2
+   Register : u_speaker/PWM_DDS_accumulator_i1
+   Register : u_speaker/u_count2_i11
+   Register : u_speaker/u_count2_i10
+   Register : u_speaker/u_count2_i9
+   Register : u_speaker/u_count2_i8
+   Register : u_speaker/u_count2_i7
+   Register : u_speaker/u_count2_i6
+   Register : u_speaker/u_count2_i5
+   Register : u_speaker/u_count2_i4
+   Register : u_speaker/u_count2_i3
+   Register : u_speaker/u_count2_i2
+   Register : u_speaker/en_0__413
+   Register : u_speaker/u_count2_i1
+   Register : u_speaker/en_1__421
+   Register : u_speaker/u_DDS_9/fcw_r_i1
+   Register : u_speaker/u_DDS_9/count__i1
+   Register : u_speaker/u_DDS_9/count__i2
+   Register : u_speaker/u_DDS_9/count__i3
+   Register : u_speaker/u_DDS_9/count__i4
+   Register : u_speaker/u_DDS_9/count__i5
+   Register : u_speaker/u_DDS_9/count__i6
+   Register : u_speaker/u_DDS_9/count__i7
+   Register : u_speaker/u_DDS_9/count__i8
+   Register : u_speaker/u_DDS_9/count__i9
+   Register : u_speaker/u_DDS_9/count__i10
+
+                                   Page 14
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_9/count__i11
+   Register : u_speaker/u_DDS_9/count__i12
+   Register : u_speaker/u_DDS_9/count__i13
+   Register : u_speaker/u_DDS_9/count__i14
+   Register : u_speaker/u_DDS_9/count__i15
+   Register : u_speaker/u_DDS_9/count__i16
+   Register : u_speaker/u_DDS_9/count__i17
+   Register : u_speaker/u_DDS_9/count__i18
+   Register : u_speaker/u_DDS_9/count__i19
+   Register : u_speaker/u_DDS_9/count__i20
+   Register : u_speaker/u_DDS_9/count__i21
+   Register : u_speaker/u_DDS_9/count__i22
+   Register : u_speaker/u_DDS_9/count__i23
+   Register : u_speaker/u_DDS_9/count__i24
+   Register : u_speaker/u_DDS_9/fcw_r_i2
+   Register : u_speaker/u_DDS_9/fcw_r_i3
+   Register : u_speaker/u_DDS_8/fcw_r_i1
+   Register : u_speaker/u_DDS_8/count__i1
+   Register : u_speaker/u_DDS_8/count__i2
+   Register : u_speaker/u_DDS_8/count__i3
+   Register : u_speaker/u_DDS_8/count__i4
+   Register : u_speaker/u_DDS_8/count__i5
+   Register : u_speaker/u_DDS_8/count__i6
+   Register : u_speaker/u_DDS_8/count__i7
+   Register : u_speaker/u_DDS_8/count__i8
+   Register : u_speaker/u_DDS_8/count__i9
+   Register : u_speaker/u_DDS_8/count__i10
+   Register : u_speaker/u_DDS_8/count__i11
+   Register : u_speaker/u_DDS_8/count__i12
+   Register : u_speaker/u_DDS_8/count__i13
+   Register : u_speaker/u_DDS_8/count__i14
+   Register : u_speaker/u_DDS_8/count__i15
+   Register : u_speaker/u_DDS_8/count__i16
+   Register : u_speaker/u_DDS_8/count__i17
+   Register : u_speaker/u_DDS_8/count__i18
+   Register : u_speaker/u_DDS_8/count__i19
+   Register : u_speaker/u_DDS_8/count__i20
+   Register : u_speaker/u_DDS_8/count__i21
+   Register : u_speaker/u_DDS_8/count__i22
+   Register : u_speaker/u_DDS_8/count__i23
+   Register : u_speaker/u_DDS_8/count__i24
+   Register : u_speaker/u_DDS_8/fcw_r_i2
+   Register : u_speaker/u_DDS_8/fcw_r_i3
+   Register : u_speaker/u_DDS_7/fcw_r_i1
+   Register : u_speaker/u_DDS_7/count_2229__i0
+   Register : u_speaker/u_DDS_7/fcw_r_i2
+   Register : u_speaker/u_DDS_7/fcw_r_i3
+   Register : u_speaker/u_DDS_7/fcw_r_i4
+   Register : u_speaker/u_DDS_7/fcw_r_i5
+   Register : u_speaker/u_DDS_7/fcw_r_i6
+   Register : u_speaker/u_DDS_7/fcw_r_i7
+   Register : u_speaker/u_DDS_7/count_2229__i1
+   Register : u_speaker/u_DDS_7/count_2229__i2
+   Register : u_speaker/u_DDS_7/count_2229__i3
+   Register : u_speaker/u_DDS_7/count_2229__i4
+   Register : u_speaker/u_DDS_7/count_2229__i5
+
+                                   Page 15
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_7/count_2229__i6
+   Register : u_speaker/u_DDS_7/count_2229__i7
+   Register : u_speaker/u_DDS_7/count_2229__i8
+   Register : u_speaker/u_DDS_7/count_2229__i9
+   Register : u_speaker/u_DDS_7/count_2229__i10
+   Register : u_speaker/u_DDS_7/count_2229__i11
+   Register : u_speaker/u_DDS_7/count_2229__i12
+   Register : u_speaker/u_DDS_7/count_2229__i13
+   Register : u_speaker/u_DDS_7/count_2229__i14
+   Register : u_speaker/u_DDS_7/count_2229__i15
+   Register : u_speaker/u_DDS_7/count_2229__i16
+   Register : u_speaker/u_DDS_7/count_2229__i17
+   Register : u_speaker/u_DDS_7/count_2229__i18
+   Register : u_speaker/u_DDS_7/count_2229__i19
+   Register : u_speaker/u_DDS_7/count_2229__i20
+   Register : u_speaker/u_DDS_7/count_2229__i21
+   Register : u_speaker/u_DDS_7/count_2229__i22
+   Register : u_speaker/u_DDS_7/count_2229__i23
+   Register : u_speaker/u_DDS_7/count_2229__i24
+   Register : u_speaker/u_DDS_6/count__i2
+   Register : u_speaker/u_DDS_6/count__i3
+   Register : u_speaker/u_DDS_6/count__i4
+   Register : u_speaker/u_DDS_6/count__i5
+   Register : u_speaker/u_DDS_6/count__i6
+   Register : u_speaker/u_DDS_6/count__i7
+   Register : u_speaker/u_DDS_6/count__i8
+   Register : u_speaker/u_DDS_6/count__i9
+   Register : u_speaker/u_DDS_6/count__i10
+   Register : u_speaker/u_DDS_6/count__i11
+   Register : u_speaker/u_DDS_6/count__i12
+   Register : u_speaker/u_DDS_6/count__i13
+   Register : u_speaker/u_DDS_6/count__i14
+   Register : u_speaker/u_DDS_6/count__i15
+   Register : u_speaker/u_DDS_6/count__i16
+   Register : u_speaker/u_DDS_6/count__i17
+   Register : u_speaker/u_DDS_6/count__i18
+   Register : u_speaker/u_DDS_6/count__i19
+   Register : u_speaker/u_DDS_6/count__i20
+   Register : u_speaker/u_DDS_6/count__i21
+   Register : u_speaker/u_DDS_6/count__i22
+   Register : u_speaker/u_DDS_6/count__i23
+   Register : u_speaker/u_DDS_6/count__i24
+   Register : u_speaker/u_DDS_6/fcw_r_ret4_i3
+   Register : u_speaker/u_DDS_6/fcw_r_ret4_i4
+   Register : u_speaker/u_DDS_6/fcw_r_ret4_i5
+   Register : u_speaker/u_DDS_6/fcw_r_ret4_i6
+   Register : u_speaker/u_DDS_6/fcw_r_ret4_i7
+   Register : u_speaker/u_DDS_6/fcw_r_ret4_i8
+   Register : u_speaker/u_DDS_5/count__i1
+   Register : u_speaker/u_DDS_5/count__i2
+   Register : u_speaker/u_DDS_5/count__i3
+   Register : u_speaker/u_DDS_5/count__i4
+   Register : u_speaker/u_DDS_5/count__i5
+   Register : u_speaker/u_DDS_5/count__i6
+   Register : u_speaker/u_DDS_5/count__i7
+   Register : u_speaker/u_DDS_5/count__i8
+
+                                   Page 16
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_5/count__i9
+   Register : u_speaker/u_DDS_5/count__i10
+   Register : u_speaker/u_DDS_5/count__i11
+   Register : u_speaker/u_DDS_5/count__i12
+   Register : u_speaker/u_DDS_5/count__i13
+   Register : u_speaker/u_DDS_5/count__i14
+   Register : u_speaker/u_DDS_5/count__i15
+   Register : u_speaker/u_DDS_5/count__i16
+   Register : u_speaker/u_DDS_5/count__i17
+   Register : u_speaker/u_DDS_5/count__i18
+   Register : u_speaker/u_DDS_5/count__i19
+   Register : u_speaker/u_DDS_5/count__i20
+   Register : u_speaker/u_DDS_5/count__i21
+   Register : u_speaker/u_DDS_5/count__i22
+   Register : u_speaker/u_DDS_5/count__i23
+   Register : u_speaker/u_DDS_5/count__i24
+   Register : u_speaker/u_DDS_5/fcw_r_ret6_i2
+   Register : u_speaker/u_DDS_5/fcw_r_ret6_i3
+   Register : u_speaker/u_DDS_5/fcw_r_ret6_i4
+   Register : u_speaker/u_DDS_5/fcw_r_ret6_i5
+   Register : u_speaker/u_DDS_5/fcw_r_ret6_i6
+   Register : u_speaker/u_DDS_5/fcw_r_ret6_i9
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i1
+   Register : u_speaker/u_DDS_4/count_2228__i0
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i2
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i4
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i5
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i6
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i7
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i8
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i9
+   Register : u_speaker/u_DDS_4/fcw_r_ret8_i10
+   Register : u_speaker/u_DDS_4/count_2228__i1
+   Register : u_speaker/u_DDS_4/count_2228__i2
+   Register : u_speaker/u_DDS_4/count_2228__i3
+   Register : u_speaker/u_DDS_4/count_2228__i4
+   Register : u_speaker/u_DDS_4/count_2228__i5
+   Register : u_speaker/u_DDS_4/count_2228__i6
+   Register : u_speaker/u_DDS_4/count_2228__i7
+   Register : u_speaker/u_DDS_4/count_2228__i8
+   Register : u_speaker/u_DDS_4/count_2228__i9
+   Register : u_speaker/u_DDS_4/count_2228__i10
+   Register : u_speaker/u_DDS_4/count_2228__i11
+   Register : u_speaker/u_DDS_4/count_2228__i12
+   Register : u_speaker/u_DDS_4/count_2228__i13
+   Register : u_speaker/u_DDS_4/count_2228__i14
+   Register : u_speaker/u_DDS_4/count_2228__i15
+   Register : u_speaker/u_DDS_4/count_2228__i16
+   Register : u_speaker/u_DDS_4/count_2228__i17
+   Register : u_speaker/u_DDS_4/count_2228__i18
+   Register : u_speaker/u_DDS_4/count_2228__i19
+   Register : u_speaker/u_DDS_4/count_2228__i20
+   Register : u_speaker/u_DDS_4/count_2228__i21
+   Register : u_speaker/u_DDS_4/count_2228__i22
+   Register : u_speaker/u_DDS_4/count_2228__i23
+   Register : u_speaker/u_DDS_4/count_2228__i24
+
+                                   Page 17
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i1
+   Register : u_speaker/u_DDS_3/count_2227__i0
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i4
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i5
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i6
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i7
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i8
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i9
+   Register : u_speaker/u_DDS_3/fcw_r_ret2_i10
+   Register : u_speaker/u_DDS_3/count_2227__i1
+   Register : u_speaker/u_DDS_3/count_2227__i2
+   Register : u_speaker/u_DDS_3/count_2227__i3
+   Register : u_speaker/u_DDS_3/count_2227__i4
+   Register : u_speaker/u_DDS_3/count_2227__i5
+   Register : u_speaker/u_DDS_3/count_2227__i6
+   Register : u_speaker/u_DDS_3/count_2227__i7
+   Register : u_speaker/u_DDS_3/count_2227__i8
+   Register : u_speaker/u_DDS_3/count_2227__i9
+   Register : u_speaker/u_DDS_3/count_2227__i10
+   Register : u_speaker/u_DDS_3/count_2227__i11
+   Register : u_speaker/u_DDS_3/count_2227__i12
+   Register : u_speaker/u_DDS_3/count_2227__i13
+   Register : u_speaker/u_DDS_3/count_2227__i14
+   Register : u_speaker/u_DDS_3/count_2227__i15
+   Register : u_speaker/u_DDS_3/count_2227__i16
+   Register : u_speaker/u_DDS_3/count_2227__i17
+   Register : u_speaker/u_DDS_3/count_2227__i18
+   Register : u_speaker/u_DDS_3/count_2227__i19
+   Register : u_speaker/u_DDS_3/count_2227__i20
+   Register : u_speaker/u_DDS_3/count_2227__i21
+   Register : u_speaker/u_DDS_3/count_2227__i22
+   Register : u_speaker/u_DDS_3/count_2227__i23
+   Register : u_speaker/u_DDS_3/count_2227__i24
+   Register : u_speaker/u_DDS_2/fcw_r_i1
+   Register : u_speaker/u_DDS_2/fcw_r_i2
+   Register : u_speaker/u_DDS_2/fcw_r_i3
+   Register : u_speaker/u_DDS_2/fcw_r_i4
+   Register : u_speaker/u_DDS_2/fcw_r_i5
+   Register : u_speaker/u_DDS_2/fcw_r_i6
+   Register : u_speaker/u_DDS_2/fcw_r_i7
+   Register : u_speaker/u_DDS_2/count__i1
+   Register : u_speaker/u_DDS_2/count__i2
+   Register : u_speaker/u_DDS_2/count__i3
+   Register : u_speaker/u_DDS_2/count__i4
+   Register : u_speaker/u_DDS_2/count__i5
+   Register : u_speaker/u_DDS_2/count__i6
+   Register : u_speaker/u_DDS_2/count__i7
+   Register : u_speaker/u_DDS_2/count__i8
+   Register : u_speaker/u_DDS_2/count__i9
+   Register : u_speaker/u_DDS_2/count__i10
+   Register : u_speaker/u_DDS_2/count__i11
+   Register : u_speaker/u_DDS_2/count__i12
+   Register : u_speaker/u_DDS_2/count__i13
+   Register : u_speaker/u_DDS_2/count__i14
+   Register : u_speaker/u_DDS_2/count__i15
+   Register : u_speaker/u_DDS_2/count__i16
+
+                                   Page 18
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_2/count__i17
+   Register : u_speaker/u_DDS_2/count__i18
+   Register : u_speaker/u_DDS_2/count__i19
+   Register : u_speaker/u_DDS_2/count__i20
+   Register : u_speaker/u_DDS_2/count__i21
+   Register : u_speaker/u_DDS_2/count__i22
+   Register : u_speaker/u_DDS_2/count__i23
+   Register : u_speaker/u_DDS_2/count__i24
+   Register : u_speaker/u_DDS_1/fcw_r_i1
+   Register : u_speaker/u_DDS_1/count_2226__i0
+   Register : u_speaker/u_DDS_1/fcw_r_i2
+   Register : u_speaker/u_DDS_1/fcw_r_i3
+   Register : u_speaker/u_DDS_1/fcw_r_i4
+   Register : u_speaker/u_DDS_1/fcw_r_i5
+   Register : u_speaker/u_DDS_1/fcw_r_i6
+   Register : u_speaker/u_DDS_1/fcw_r_i7
+   Register : u_speaker/u_DDS_1/fcw_r_i8
+   Register : u_speaker/u_DDS_1/fcw_r_i9
+   Register : u_speaker/u_DDS_1/fcw_r_i10
+   Register : u_speaker/u_DDS_1/fcw_r_i11
+   Register : u_speaker/u_DDS_1/count_2226__i1
+   Register : u_speaker/u_DDS_1/count_2226__i2
+   Register : u_speaker/u_DDS_1/count_2226__i3
+   Register : u_speaker/u_DDS_1/count_2226__i4
+   Register : u_speaker/u_DDS_1/count_2226__i5
+   Register : u_speaker/u_DDS_1/count_2226__i6
+   Register : u_speaker/u_DDS_1/count_2226__i7
+   Register : u_speaker/u_DDS_1/count_2226__i8
+   Register : u_speaker/u_DDS_1/count_2226__i9
+   Register : u_speaker/u_DDS_1/count_2226__i10
+   Register : u_speaker/u_DDS_1/count_2226__i11
+   Register : u_speaker/u_DDS_1/count_2226__i12
+   Register : u_speaker/u_DDS_1/count_2226__i13
+   Register : u_speaker/u_DDS_1/count_2226__i14
+   Register : u_speaker/u_DDS_1/count_2226__i15
+   Register : u_speaker/u_DDS_1/count_2226__i16
+   Register : u_speaker/u_DDS_1/count_2226__i17
+   Register : u_speaker/u_DDS_1/count_2226__i18
+   Register : u_speaker/u_DDS_1/count_2226__i19
+   Register : u_speaker/u_DDS_1/count_2226__i20
+   Register : u_speaker/u_DDS_1/count_2226__i21
+   Register : u_speaker/u_DDS_1/count_2226__i22
+   Register : u_speaker/u_DDS_1/count_2226__i23
+   Register : u_speaker/u_DDS_1/count_2226__i24
+   Register : u_speaker/u_DDS_13/count__i1
+   Register : u_speaker/u_DDS_13/count__i2
+   Register : u_speaker/u_DDS_13/count__i3
+   Register : u_speaker/u_DDS_13/count__i4
+   Register : u_speaker/u_DDS_13/count__i5
+   Register : u_speaker/u_DDS_13/count__i6
+   Register : u_speaker/u_DDS_13/count__i7
+   Register : u_speaker/u_DDS_13/count__i8
+   Register : u_speaker/u_DDS_13/count__i9
+   Register : u_speaker/u_DDS_13/count__i10
+   Register : u_speaker/u_DDS_13/count__i11
+   Register : u_speaker/u_DDS_13/count__i12
+
+                                   Page 19
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_13/count__i13
+   Register : u_speaker/u_DDS_13/count__i14
+   Register : u_speaker/u_DDS_13/count__i15
+   Register : u_speaker/u_DDS_13/count__i16
+   Register : u_speaker/u_DDS_13/count__i17
+   Register : u_speaker/u_DDS_13/count__i18
+   Register : u_speaker/u_DDS_13/count__i19
+   Register : u_speaker/u_DDS_13/count__i20
+   Register : u_speaker/u_DDS_13/count__i21
+   Register : u_speaker/u_DDS_13/count__i22
+   Register : u_speaker/u_DDS_13/count__i23
+   Register : u_speaker/u_DDS_13/count__i24
+   Register : u_speaker/u_DDS_12/count_2230__i0
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i4
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i5
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i6
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i7
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i8
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i9
+   Register : u_speaker/u_DDS_12/fcw_r_ret0_i10
+   Register : u_speaker/u_DDS_12/count_2230__i1
+   Register : u_speaker/u_DDS_12/count_2230__i2
+   Register : u_speaker/u_DDS_12/count_2230__i3
+   Register : u_speaker/u_DDS_12/count_2230__i4
+   Register : u_speaker/u_DDS_12/count_2230__i5
+   Register : u_speaker/u_DDS_12/count_2230__i6
+   Register : u_speaker/u_DDS_12/count_2230__i7
+   Register : u_speaker/u_DDS_12/count_2230__i8
+   Register : u_speaker/u_DDS_12/count_2230__i9
+   Register : u_speaker/u_DDS_12/count_2230__i10
+   Register : u_speaker/u_DDS_12/count_2230__i11
+   Register : u_speaker/u_DDS_12/count_2230__i12
+   Register : u_speaker/u_DDS_12/count_2230__i13
+   Register : u_speaker/u_DDS_12/count_2230__i14
+   Register : u_speaker/u_DDS_12/count_2230__i15
+   Register : u_speaker/u_DDS_12/count_2230__i16
+   Register : u_speaker/u_DDS_12/count_2230__i17
+   Register : u_speaker/u_DDS_12/count_2230__i18
+   Register : u_speaker/u_DDS_12/count_2230__i19
+   Register : u_speaker/u_DDS_12/count_2230__i20
+   Register : u_speaker/u_DDS_12/count_2230__i21
+   Register : u_speaker/u_DDS_12/count_2230__i22
+   Register : u_speaker/u_DDS_12/count_2230__i23
+   Register : u_speaker/u_DDS_12/count_2230__i24
+   Register : u_speaker/u_DDS_11/fcw_r_i1
+   Register : u_speaker/u_DDS_11/count__i1
+   Register : u_speaker/u_DDS_11/count__i2
+   Register : u_speaker/u_DDS_11/count__i3
+   Register : u_speaker/u_DDS_11/count__i4
+   Register : u_speaker/u_DDS_11/count__i5
+   Register : u_speaker/u_DDS_11/count__i6
+   Register : u_speaker/u_DDS_11/count__i7
+   Register : u_speaker/u_DDS_11/count__i8
+   Register : u_speaker/u_DDS_11/count__i9
+   Register : u_speaker/u_DDS_11/count__i10
+   Register : u_speaker/u_DDS_11/count__i11
+
+                                   Page 20
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_speaker/u_DDS_11/count__i12
+   Register : u_speaker/u_DDS_11/count__i13
+   Register : u_speaker/u_DDS_11/count__i14
+   Register : u_speaker/u_DDS_11/count__i15
+   Register : u_speaker/u_DDS_11/count__i16
+   Register : u_speaker/u_DDS_11/count__i17
+   Register : u_speaker/u_DDS_11/count__i18
+   Register : u_speaker/u_DDS_11/count__i19
+   Register : u_speaker/u_DDS_11/count__i20
+   Register : u_speaker/u_DDS_11/count__i21
+   Register : u_speaker/u_DDS_11/count__i22
+   Register : u_speaker/u_DDS_11/count__i23
+   Register : u_speaker/u_DDS_11/count__i24
+   Register : u_speaker/u_DDS_11/fcw_r_i2
+   Register : u_speaker/u_DDS_11/fcw_r_i3
+   Register : u_speaker/u_DDS_11/fcw_r_i4
+   Register : u_speaker/u_DDS_11/fcw_r_i5
+   Register : u_speaker/u_DDS_11/fcw_r_i6
+   Register : u_speaker/u_DDS_11/fcw_r_i7
+   Register : u_speaker/u_DDS_11/fcw_r_i8
+   Register : u_speaker/u_DDS_11/fcw_r_i9
+   Register : u_speaker/u_DDS_11/fcw_r_i10
+   Register : u_speaker/u_DDS_10/fcw_r_i1
+   Register : u_speaker/u_DDS_10/count__i2
+   Register : u_speaker/u_DDS_10/count__i3
+   Register : u_speaker/u_DDS_10/count__i4
+   Register : u_speaker/u_DDS_10/count__i5
+   Register : u_speaker/u_DDS_10/count__i6
+   Register : u_speaker/u_DDS_10/count__i7
+   Register : u_speaker/u_DDS_10/count__i8
+   Register : u_speaker/u_DDS_10/count__i9
+   Register : u_speaker/u_DDS_10/count__i10
+   Register : u_speaker/u_DDS_10/count__i11
+   Register : u_speaker/u_DDS_10/count__i12
+   Register : u_speaker/u_DDS_10/count__i13
+   Register : u_speaker/u_DDS_10/count__i14
+   Register : u_speaker/u_DDS_10/count__i15
+   Register : u_speaker/u_DDS_10/count__i16
+   Register : u_speaker/u_DDS_10/count__i17
+   Register : u_speaker/u_DDS_10/count__i18
+   Register : u_speaker/u_DDS_10/count__i19
+   Register : u_speaker/u_DDS_10/count__i20
+   Register : u_speaker/u_DDS_10/count__i21
+   Register : u_speaker/u_DDS_10/count__i22
+   Register : u_speaker/u_DDS_10/count__i23
+   Register : u_speaker/u_DDS_10/count__i24
+   Register : u_speaker/u_DDS_10/fcw_r_i2
+   Register : u_speaker/u_DDS_10/fcw_r_i3
+   Register : u_speaker/u_DDS_10/fcw_r_i4
+   Register : u_speaker/u_DDS_10/fcw_r_i5
+   Register : u_speaker/u_DDS_10/fcw_r_i6
+   Register : u_speaker/u_DDS_10/fcw_r_i7
+   Register : u_speaker/u_DDS_10/fcw_r_i8
+   Register : u_speaker/u_DDS_10/fcw_r_i9
+   Register : u_speaker/u_DDS_10/fcw_r_i10
+   Register : count_beat_i4_2224__i0
+
+                                   Page 21
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : count_note_2222__i0
+   Register : beat_i2
+   Register : beat_i1
+   Register : note_i4
+   Register : note_i3
+   Register : note_i2
+   Register : note_i1
+   Register : u_buzzer/cycle_i0
+   Register : u_buzzer/yinjie_box_i0
+   Register : u_buzzer/yinjie_box_i1
+   Register : u_buzzer/CNT_2225__i0
+   Register : u_buzzer/PWM_89
+   Register : u_buzzer/cycle_i1
+   Register : u_buzzer/cycle_i2
+   Register : u_buzzer/cycle_i3
+   Register : u_buzzer/cycle_i4
+   Register : u_buzzer/cycle_i5
+   Register : u_buzzer/cycle_i6
+   Register : u_buzzer/cycle_i7
+   Register : u_buzzer/cycle_i8
+   Register : u_buzzer/cycle_i9
+   Register : u_buzzer/cycle_i10
+   Register : u_buzzer/cycle_i11
+   Register : u_buzzer/cycle_i12
+   Register : u_buzzer/cycle_i13
+   Register : u_buzzer/cycle_i14
+   Register : u_buzzer/cycle_i15
+   Register : u_buzzer/cycle_i16
+   Register : u_buzzer/cycle_i17
+   Register : u_buzzer/CNT_2225__i1
+   Register : u_buzzer/CNT_2225__i2
+   Register : u_buzzer/CNT_2225__i3
+   Register : u_buzzer/CNT_2225__i4
+   Register : u_buzzer/CNT_2225__i5
+   Register : u_buzzer/CNT_2225__i6
+   Register : u_buzzer/CNT_2225__i7
+   Register : u_buzzer/CNT_2225__i8
+   Register : u_buzzer/CNT_2225__i9
+   Register : u_buzzer/CNT_2225__i10
+   Register : u_buzzer/CNT_2225__i11
+   Register : u_buzzer/CNT_2225__i12
+   Register : u_buzzer/CNT_2225__i13
+   Register : u_buzzer/CNT_2225__i14
+   Register : u_buzzer/CNT_2225__i15
+   Register : u_buzzer/CNT_2225__i16
+   Register : u_buzzer/CNT_2225__i17
+   Register : count_beat_i4_2224__i1
+   Register : count_beat_i4_2224__i2
+   Register : count_beat_i4_2224__i3
+   Register : count_beat_i4_2224__i4
+   Register : count_note_2222__i7
+   Register : count_note_2222__i6
+   Register : count_note_2222__i5
+   Register : count_note_2222__i4
+   Register : beat_i0
+   Register : count_note_2222__i3
+
+                                   Page 22
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : count_note_2222__i2
+   Register : count_note_2222__i1
+   Register : beat_i3
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 432 
+   DP8KC = 6
+
+     Type and instance name of component: 
+   Register : u_key_state/delay_cnt_i0
+   Register : u_key_state/delay_cnt_i1
+   Register : u_key_state/delay_cnt_i2
+   Register : u_key_state/delay_cnt_i3
+   Register : u_key_state/delay_cnt_i4
+   Register : u_key_state/delay_cnt_i5
+   Register : u_key_state/delay_cnt_i7
+   Register : u_key_state/delay_cnt_i8
+   Register : u_key_state/delay_cnt_i10
+   Register : u_key_state/delay_cnt_i11
+   Register : u_key_state/delay_cnt_i12
+   Register : u_key_state/delay_cnt_i13
+   Register : u_key_state/delay_cnt_i15
+   Register : u_key_state/delay_cnt_i20
+   Register : u_key_state/delay_cnt_i21
+   Register : u_key_state/delay_cnt_i22
+   Register : u_key_state/delay_cnt_i23
+   Register : u_key_state/delay_cnt_i24
+   Register : u_key_state/delay_cnt_i25
+   Register : u_key_state/delay_cnt_i26
+   Register : u_key_state/delay_cnt_i27
+   Register : u_key_state/delay_cnt_i28
+   Register : u_key_state/delay_cnt_i29
+   Register : u_key_state/delay_cnt_i30
+   Register : u_key_state/delay_cnt_i31
+   Register : cnt_2220__i0
+   Register : u_key_5/delay_cnt_i0
+   Register : u_key_5/delay_cnt_i31
+   Register : u_key_5/delay_cnt_i30
+   Register : u_key_5/delay_cnt_i29
+   Register : u_key_5/delay_cnt_i28
+   Register : u_key_5/delay_cnt_i27
+   Register : u_key_5/delay_cnt_i26
+   Register : u_key_5/delay_cnt_i25
+   Register : u_key_5/delay_cnt_i24
+   Register : u_key_5/delay_cnt_i23
+   Register : u_key_5/delay_cnt_i22
+   Register : u_key_5/delay_cnt_i21
+   Register : u_key_5/delay_cnt_i20
+
+                                   Page 23
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_5/delay_cnt_i15
+   Register : u_key_5/delay_cnt_i13
+   Register : u_key_5/delay_cnt_i12
+   Register : u_key_5/delay_cnt_i11
+   Register : u_key_5/delay_cnt_i10
+   Register : u_key_5/delay_cnt_i8
+   Register : u_key_5/delay_cnt_i7
+   Register : u_key_5/delay_cnt_i5
+   Register : u_key_5/delay_cnt_i4
+   Register : u_key_5/delay_cnt_i3
+   Register : u_key_5/delay_cnt_i2
+   Register : u_key_5/delay_cnt_i1
+   Register : cnt_2220__i1
+   Register : cnt_2220__i2
+   Register : cnt_2220__i3
+   Register : cnt_2220__i4
+   Register : cnt_2220__i5
+   Register : cnt_2220__i6
+   Register : cnt_2220__i7
+   Register : cnt_2220__i8
+   Register : cnt_2220__i9
+   Register : cnt_2220__i10
+   Register : cnt_2220__i11
+   Register : cnt_2220__i12
+   Register : cnt_2220__i13
+   Register : cnt_2220__i14
+   Register : cnt_2220__i15
+   Register : cnt_2220__i16
+   Register : cnt_2220__i17
+   Register : cnt_2220__i18
+   Register : cnt_2220__i19
+   Register : cnt_2220__i20
+   Register : cnt_2220__i21
+   Register : cnt_2220__i22
+   Register : cnt_2220__i23
+   Register : cnt_2220__i24
+   Register : cnt_2220__i25
+   Register : cnt_2220__i26
+   Register : cnt_2220__i27
+   Register : cnt_2220__i28
+   Register : cnt_2220__i29
+   Register : cnt_2220__i30
+   Register : cnt_2220__i31
+   Register : u_key_8/delay_cnt_i0
+   Register : u_key_8/delay_cnt_i31
+   Register : u_key_8/delay_cnt_i30
+   Register : u_key_8/delay_cnt_i29
+   Register : u_key_8/delay_cnt_i28
+   Register : u_key_8/delay_cnt_i27
+   Register : u_key_8/delay_cnt_i26
+   Register : u_key_8/delay_cnt_i25
+   Register : u_key_8/delay_cnt_i24
+   Register : u_key_8/delay_cnt_i23
+   Register : u_key_8/delay_cnt_i22
+   Register : u_key_8/delay_cnt_i21
+   Register : u_key_8/delay_cnt_i20
+
+                                   Page 24
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_8/delay_cnt_i15
+   Register : u_key_8/delay_cnt_i13
+   Register : u_key_8/delay_cnt_i12
+   Register : u_key_8/delay_cnt_i11
+   Register : u_key_8/delay_cnt_i10
+   Register : u_key_8/delay_cnt_i8
+   Register : u_key_8/delay_cnt_i7
+   Register : u_key_8/delay_cnt_i5
+   Register : u_key_8/delay_cnt_i4
+   Register : u_key_8/delay_cnt_i3
+   Register : u_key_8/delay_cnt_i2
+   Register : u_key_8/delay_cnt_i1
+   Register : u_key_10/delay_cnt_i0
+   Register : u_key_10/delay_cnt_i31
+   Register : u_key_10/delay_cnt_i30
+   Register : u_key_10/delay_cnt_i29
+   Register : u_key_10/delay_cnt_i28
+   Register : u_key_10/delay_cnt_i27
+   Register : u_key_10/delay_cnt_i26
+   Register : u_key_10/delay_cnt_i25
+   Register : u_key_10/delay_cnt_i24
+   Register : u_key_10/delay_cnt_i23
+   Register : u_key_10/delay_cnt_i22
+   Register : u_key_10/delay_cnt_i21
+   Register : u_key_10/delay_cnt_i20
+   Register : u_key_10/delay_cnt_i15
+   Register : u_key_10/delay_cnt_i13
+   Register : u_key_10/delay_cnt_i12
+   Register : u_key_10/delay_cnt_i11
+   Register : u_key_10/delay_cnt_i10
+   Register : u_key_10/delay_cnt_i8
+   Register : u_key_10/delay_cnt_i7
+   Register : u_key_10/delay_cnt_i5
+   Register : u_key_10/delay_cnt_i4
+   Register : u_key_10/delay_cnt_i3
+   Register : u_key_10/delay_cnt_i2
+   Register : u_key_10/delay_cnt_i1
+   Register : u_key_11/delay_cnt_i0
+   Register : u_key_11/delay_cnt_i31
+   Register : u_key_11/delay_cnt_i30
+   Register : u_key_11/delay_cnt_i29
+   Register : u_key_11/delay_cnt_i28
+   Register : u_key_11/delay_cnt_i27
+   Register : u_key_11/delay_cnt_i26
+   Register : u_key_11/delay_cnt_i25
+   Register : u_key_11/delay_cnt_i24
+   Register : u_key_11/delay_cnt_i23
+   Register : u_key_11/delay_cnt_i22
+   Register : u_key_11/delay_cnt_i21
+   Register : u_key_11/delay_cnt_i20
+   Register : u_key_11/delay_cnt_i15
+   Register : u_key_11/delay_cnt_i13
+   Register : u_key_11/delay_cnt_i12
+   Register : u_key_11/delay_cnt_i11
+   Register : u_key_11/delay_cnt_i10
+   Register : u_key_11/delay_cnt_i8
+
+                                   Page 25
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_11/delay_cnt_i7
+   Register : u_key_11/delay_cnt_i5
+   Register : u_key_11/delay_cnt_i4
+   Register : u_key_11/delay_cnt_i3
+   Register : u_key_11/delay_cnt_i2
+   Register : u_key_11/delay_cnt_i1
+   Register : u_key_12/delay_cnt_i0
+   Register : u_key_12/delay_cnt_i31
+   Register : u_key_12/delay_cnt_i30
+   Register : u_key_12/delay_cnt_i29
+   Register : u_key_12/delay_cnt_i28
+   Register : u_key_12/delay_cnt_i27
+   Register : u_key_12/delay_cnt_i26
+   Register : u_key_12/delay_cnt_i25
+   Register : u_key_12/delay_cnt_i24
+   Register : u_key_12/delay_cnt_i23
+   Register : u_key_12/delay_cnt_i22
+   Register : u_key_12/delay_cnt_i21
+   Register : u_key_12/delay_cnt_i20
+   Register : u_key_12/delay_cnt_i15
+   Register : u_key_12/delay_cnt_i13
+   Register : u_key_12/delay_cnt_i12
+   Register : u_key_12/delay_cnt_i11
+   Register : u_key_12/delay_cnt_i10
+   Register : u_key_12/delay_cnt_i8
+   Register : u_key_12/delay_cnt_i7
+   Register : u_key_12/delay_cnt_i5
+   Register : u_key_12/delay_cnt_i4
+   Register : u_key_12/delay_cnt_i3
+   Register : u_key_12/delay_cnt_i2
+   Register : u_key_12/delay_cnt_i1
+   Register : u_key_2/delay_cnt_i0
+   Register : u_key_2/delay_cnt_i31
+   Register : u_key_2/delay_cnt_i30
+   Register : u_key_2/delay_cnt_i29
+   Register : u_key_2/delay_cnt_i28
+   Register : u_key_2/delay_cnt_i27
+   Register : u_key_2/delay_cnt_i26
+   Register : u_key_2/delay_cnt_i25
+   Register : u_key_2/delay_cnt_i24
+   Register : u_key_2/delay_cnt_i23
+   Register : u_key_2/delay_cnt_i22
+   Register : u_key_2/delay_cnt_i21
+   Register : u_key_2/delay_cnt_i20
+   Register : u_key_2/delay_cnt_i15
+   Register : u_key_2/delay_cnt_i13
+   Register : u_key_2/delay_cnt_i12
+   Register : u_key_2/delay_cnt_i11
+   Register : u_key_2/delay_cnt_i10
+   Register : u_key_2/delay_cnt_i8
+   Register : u_key_2/delay_cnt_i7
+   Register : u_key_2/delay_cnt_i5
+   Register : u_key_2/delay_cnt_i4
+   Register : u_key_2/delay_cnt_i3
+   Register : u_key_2/delay_cnt_i2
+   Register : u_key_2/delay_cnt_i1
+
+                                   Page 26
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_13/delay_cnt_i0
+   Register : u_key_13/delay_cnt_i31
+   Register : u_key_13/delay_cnt_i30
+   Register : u_key_13/delay_cnt_i29
+   Register : u_key_13/delay_cnt_i28
+   Register : u_key_13/delay_cnt_i27
+   Register : u_key_13/delay_cnt_i26
+   Register : u_key_13/delay_cnt_i25
+   Register : u_key_13/delay_cnt_i24
+   Register : u_key_13/delay_cnt_i23
+   Register : u_key_13/delay_cnt_i22
+   Register : u_key_13/delay_cnt_i21
+   Register : u_key_13/delay_cnt_i20
+   Register : u_key_13/delay_cnt_i15
+   Register : u_key_13/delay_cnt_i13
+   Register : u_key_13/delay_cnt_i12
+   Register : u_key_13/delay_cnt_i11
+   Register : u_key_13/delay_cnt_i10
+   Register : u_key_13/delay_cnt_i8
+   Register : u_key_13/delay_cnt_i7
+   Register : u_key_13/delay_cnt_i5
+   Register : u_key_13/delay_cnt_i4
+   Register : u_key_13/delay_cnt_i3
+   Register : u_key_13/delay_cnt_i2
+   Register : u_key_13/delay_cnt_i1
+   Register : u_key_9/delay_cnt_i0
+   Register : u_key_9/delay_cnt_i31
+   Register : u_key_9/delay_cnt_i30
+   Register : u_key_9/delay_cnt_i29
+   Register : u_key_9/delay_cnt_i28
+   Register : u_key_9/delay_cnt_i27
+   Register : u_key_9/delay_cnt_i26
+   Register : u_key_9/delay_cnt_i25
+   Register : u_key_9/delay_cnt_i24
+   Register : u_key_9/delay_cnt_i23
+   Register : u_key_9/delay_cnt_i22
+   Register : u_key_9/delay_cnt_i21
+   Register : u_key_9/delay_cnt_i20
+   Register : u_key_9/delay_cnt_i15
+   Register : u_key_9/delay_cnt_i13
+   Register : u_key_9/delay_cnt_i12
+   Register : u_key_9/delay_cnt_i11
+   Register : u_key_9/delay_cnt_i10
+   Register : u_key_9/delay_cnt_i8
+   Register : u_key_9/delay_cnt_i7
+   Register : u_key_9/delay_cnt_i5
+   Register : u_key_9/delay_cnt_i4
+   Register : u_key_9/delay_cnt_i3
+   Register : u_key_9/delay_cnt_i2
+   Register : u_key_9/delay_cnt_i1
+   Register : u_key_1/delay_cnt_i0
+   Register : u_key_1/delay_cnt_i31
+   Register : u_key_1/delay_cnt_i30
+   Register : u_key_1/delay_cnt_i29
+   Register : u_key_1/delay_cnt_i28
+   Register : u_key_1/delay_cnt_i27
+
+                                   Page 27
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_1/delay_cnt_i26
+   Register : u_key_1/delay_cnt_i25
+   Register : u_key_1/delay_cnt_i24
+   Register : u_key_1/delay_cnt_i23
+   Register : u_key_1/delay_cnt_i22
+   Register : u_key_1/delay_cnt_i21
+   Register : u_key_1/delay_cnt_i20
+   Register : u_key_1/delay_cnt_i15
+   Register : u_key_1/delay_cnt_i13
+   Register : u_key_1/delay_cnt_i12
+   Register : u_key_1/delay_cnt_i11
+   Register : u_key_1/delay_cnt_i10
+   Register : u_key_1/delay_cnt_i8
+   Register : u_key_1/delay_cnt_i7
+   Register : u_key_1/delay_cnt_i5
+   Register : u_key_1/delay_cnt_i4
+   Register : u_key_1/delay_cnt_i3
+   Register : u_key_1/delay_cnt_i2
+   Register : u_key_1/delay_cnt_i1
+   Register : u_key_7/delay_cnt_i0
+   Register : u_key_7/delay_cnt_i31
+   Register : u_key_7/delay_cnt_i30
+   Register : u_key_7/delay_cnt_i29
+   Register : u_key_7/delay_cnt_i28
+   Register : u_key_7/delay_cnt_i27
+   Register : u_key_7/delay_cnt_i26
+   Register : u_key_7/delay_cnt_i25
+   Register : u_key_7/delay_cnt_i24
+   Register : u_key_7/delay_cnt_i23
+   Register : u_key_7/delay_cnt_i22
+   Register : u_key_7/delay_cnt_i21
+   Register : u_key_7/delay_cnt_i20
+   Register : u_key_7/delay_cnt_i15
+   Register : u_key_7/delay_cnt_i13
+   Register : u_key_7/delay_cnt_i12
+   Register : u_key_7/delay_cnt_i11
+   Register : u_key_7/delay_cnt_i10
+   Register : u_key_7/delay_cnt_i8
+   Register : u_key_7/delay_cnt_i7
+   Register : u_key_7/delay_cnt_i5
+   Register : u_key_7/delay_cnt_i4
+   Register : u_key_7/delay_cnt_i3
+   Register : u_key_7/delay_cnt_i2
+   Register : u_key_7/delay_cnt_i1
+   Register : u_key_6/delay_cnt_i0
+   Register : u_key_6/delay_cnt_i31
+   Register : u_key_6/delay_cnt_i30
+   Register : u_key_6/delay_cnt_i29
+   Register : u_key_6/delay_cnt_i28
+   Register : u_key_6/delay_cnt_i27
+   Register : u_key_6/delay_cnt_i26
+   Register : u_key_6/delay_cnt_i25
+   Register : u_key_6/delay_cnt_i24
+   Register : u_key_6/delay_cnt_i23
+   Register : u_key_6/delay_cnt_i22
+   Register : u_key_6/delay_cnt_i21
+
+                                   Page 28
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_6/delay_cnt_i20
+   Register : u_key_6/delay_cnt_i15
+   Register : u_key_6/delay_cnt_i13
+   Register : u_key_6/delay_cnt_i12
+   Register : u_key_6/delay_cnt_i11
+   Register : u_key_6/delay_cnt_i10
+   Register : u_key_6/delay_cnt_i8
+   Register : u_key_6/delay_cnt_i7
+   Register : u_key_6/delay_cnt_i5
+   Register : u_key_6/delay_cnt_i4
+   Register : u_key_6/delay_cnt_i3
+   Register : u_key_6/delay_cnt_i2
+   Register : u_key_6/delay_cnt_i1
+   Register : u_key_3/delay_cnt_i0
+   Register : u_key_3/delay_cnt_i31
+   Register : u_key_3/delay_cnt_i30
+   Register : u_key_3/delay_cnt_i29
+   Register : u_key_3/delay_cnt_i28
+   Register : u_key_3/delay_cnt_i27
+   Register : u_key_3/delay_cnt_i26
+   Register : u_key_3/delay_cnt_i25
+   Register : u_key_3/delay_cnt_i24
+   Register : u_key_3/delay_cnt_i23
+   Register : u_key_3/delay_cnt_i22
+   Register : u_key_3/delay_cnt_i21
+   Register : u_key_3/delay_cnt_i20
+   Register : u_key_3/delay_cnt_i15
+   Register : u_key_3/delay_cnt_i13
+   Register : u_key_3/delay_cnt_i12
+   Register : u_key_3/delay_cnt_i11
+   Register : u_key_3/delay_cnt_i10
+   Register : u_key_3/delay_cnt_i8
+   Register : u_key_3/delay_cnt_i7
+   Register : u_key_3/delay_cnt_i5
+   Register : u_key_3/delay_cnt_i4
+   Register : u_key_3/delay_cnt_i3
+   Register : u_key_3/delay_cnt_i2
+   Register : u_key_3/delay_cnt_i1
+   Register : u_key_15/delay_cnt_i11
+   Register : u_key_15/delay_cnt_i10
+   Register : u_key_15/delay_cnt_i4
+   Register : u_key_15/delay_cnt_i5
+   Register : u_key_15/delay_cnt_i7
+   Register : u_key_15/delay_cnt_i3
+   Register : u_key_15/delay_cnt_i8
+   Register : u_key_15/delay_cnt_i2
+   Register : u_key_15/delay_cnt_i1
+   Register : u_key_15/delay_cnt_i0
+   Register : u_key_15/delay_cnt_i15
+   Register : u_key_15/delay_cnt_i13
+   Register : u_key_15/delay_cnt_i20
+   Register : u_key_15/delay_cnt_i21
+   Register : u_key_15/delay_cnt_i22
+   Register : u_key_15/delay_cnt_i23
+   Register : u_key_15/delay_cnt_i24
+   Register : u_key_15/delay_cnt_i25
+
+                                   Page 29
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_15/delay_cnt_i26
+   Register : u_key_15/delay_cnt_i27
+   Register : u_key_15/delay_cnt_i28
+   Register : u_key_15/delay_cnt_i29
+   Register : u_key_15/delay_cnt_i30
+   Register : u_key_15/delay_cnt_i31
+   Register : u_key_15/delay_cnt_i12
+   Register : u_key_4/delay_cnt_i0
+   Register : u_key_4/delay_cnt_i31
+   Register : u_key_4/delay_cnt_i30
+   Register : u_key_4/delay_cnt_i29
+   Register : u_key_4/delay_cnt_i28
+   Register : u_key_4/delay_cnt_i27
+   Register : u_key_4/delay_cnt_i26
+   Register : u_key_4/delay_cnt_i25
+   Register : u_key_4/delay_cnt_i24
+   Register : u_key_4/delay_cnt_i23
+   Register : u_key_4/delay_cnt_i22
+   Register : u_key_4/delay_cnt_i21
+   Register : u_key_4/delay_cnt_i20
+   Register : u_key_4/delay_cnt_i15
+   Register : u_key_4/delay_cnt_i13
+   Register : u_key_4/delay_cnt_i12
+   Register : u_key_4/delay_cnt_i11
+   Register : u_key_4/delay_cnt_i10
+   Register : u_key_4/delay_cnt_i8
+   Register : u_key_4/delay_cnt_i7
+   Register : u_key_4/delay_cnt_i5
+   Register : u_key_4/delay_cnt_i4
+   Register : u_key_4/delay_cnt_i3
+   Register : u_key_4/delay_cnt_i2
+   Register : u_key_4/delay_cnt_i1
+   Register : u_key_14/delay_cnt_i0
+   Register : u_key_14/delay_cnt_i31
+   Register : u_key_14/delay_cnt_i30
+   Register : u_key_14/delay_cnt_i29
+   Register : u_key_14/delay_cnt_i28
+   Register : u_key_14/delay_cnt_i27
+   Register : u_key_14/delay_cnt_i26
+   Register : u_key_14/delay_cnt_i25
+   Register : u_key_14/delay_cnt_i24
+   Register : u_key_14/delay_cnt_i23
+   Register : u_key_14/delay_cnt_i22
+   Register : u_key_14/delay_cnt_i20
+   Register : u_key_14/delay_cnt_i21
+   Register : u_key_14/delay_cnt_i15
+   Register : u_key_14/delay_cnt_i13
+   Register : u_key_14/delay_cnt_i12
+   Register : u_key_14/delay_cnt_i11
+   Register : u_key_14/delay_cnt_i10
+   Register : u_key_14/delay_cnt_i8
+   Register : u_key_14/delay_cnt_i7
+   Register : u_key_14/delay_cnt_i5
+   Register : u_key_14/delay_cnt_i4
+   Register : u_key_14/delay_cnt_i3
+   Register : u_key_14/delay_cnt_i2
+
+                                   Page 30
+
+
+
+
+Design:  piano                                         Date:  08/17/22  21:55:13
+
+GSR Usage (cont)
+----------------
+   Register : u_key_14/delay_cnt_i1
+   DP8KC : u_speaker/sin2/sin_rom_0_2_0
+   DP8KC : u_speaker/sin2/sin_rom_0_0_2
+   DP8KC : u_speaker/sin2/sin_rom_0_1_1
+   DP8KC : u_speaker/sin1/sin_rom_0_2_0
+   DP8KC : u_speaker/sin1/sin_rom_0_1_1
+   DP8KC : u_speaker/sin1/sin_rom_0_0_2
+
+     EBR components with enabled GSR
+-------------------------------
+
+     These EBR components have the GSR property set to ENABLED. The components
+     will respond to the asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   DP8KC = 6
+
+     Type and instance name of component: 
+   DP8KC : u_speaker/sin2/sin_rom_0_2_0
+   DP8KC : u_speaker/sin2/sin_rom_0_0_2
+   DP8KC : u_speaker/sin2/sin_rom_0_1_1
+   DP8KC : u_speaker/sin1/sin_rom_0_2_0
+   DP8KC : u_speaker/sin1/sin_rom_0_1_1
+   DP8KC : u_speaker/sin1/sin_rom_0_0_2
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 68 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 31
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

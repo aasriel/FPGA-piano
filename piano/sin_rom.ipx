@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="sin_rom" module="ROM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 07 25 17:56:32.234" version="5.4" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="" type="" modified="2022 07 25 17:56:32.099"/>
+		<File name="d:/fpga_project/lattice_diamond/pwm/wave_data/sin_2048.mem" type="mem" modified="2022 07 25 17:56:11.303"/>
+		<File name="sin_rom.lpc" type="lpc" modified="2022 07 25 17:56:30.589"/>
+		<File name="sin_rom.v" type="top_level_verilog" modified="2022 07 25 17:56:30.654"/>
+		<File name="sin_rom_tmpl.v" type="template_verilog" modified="2022 07 25 17:56:30.655"/>
+		<File name="tb_sin_rom_tmpl.v" type="testbench_verilog" modified="2022 07 25 17:56:30.660"/>
+  </Package>
+</DiamondModule>

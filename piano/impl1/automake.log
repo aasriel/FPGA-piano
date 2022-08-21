@@ -1,0 +1,1577 @@
+
+synthesis -f "piano_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Aug 17 21:55:04 2022
+
+
+Command Line:  synthesis -f piano_impl1_lattice.synproj -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/FPGA_Project/lattice_diamond/piano (searchpath added)
+-p D:/lattice diamond/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p D:/FPGA_Project/lattice_diamond/piano/impl1 (searchpath added)
+-p D:/FPGA_Project/lattice_diamond/piano (searchpath added)
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/piano.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/buzzer.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/clk_pll.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/DDS.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/key.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/sin_rom.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/speaker.v
+NGD file = piano_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+    <postMsg mid="35001200" type="Warning" dynamic="1" navigation="0" arg0="piano"  />
+Technology check ok...
+
+Analyzing Verilog file D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/piano.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/buzzer.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/clk_pll.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/dds.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/key.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/sin_rom.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/speaker.v. VERI-1482
+Analyzing Verilog file D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): piano
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/piano.v(1): " arg1="piano" arg2="d:/fpga_project/lattice_diamond/piano/piano.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/clk_pll.v(8): " arg1="clk_pll" arg2="d:/fpga_project/lattice_diamond/piano/clk_pll.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKFB_DIV=4,CLKOP_DIV=11,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=10,CLKOS_TRIM_POL=&quot;FALLING&quot;)" arg2="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/speaker.v(1): " arg1="speaker" arg2="d:/fpga_project/lattice_diamond/piano/speaker.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/sin_rom.v(8): " arg1="sin_rom" arg2="d:/fpga_project/lattice_diamond/piano/sin_rom.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_1" arg2="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_2" arg2="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_3" arg2="D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/dds.v(1): " arg1="DDS" arg2="d:/fpga_project/lattice_diamond/piano/dds.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/key.v(1): " arg1="key" arg2="d:/fpga_project/lattice_diamond/piano/key.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/buzzer.v(1): " arg1="buzzer" arg2="d:/fpga_project/lattice_diamond/piano/buzzer.v" arg3="1"  />
+Last elaborated design is piano()
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = piano.
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/rom2_note"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/rom2_note"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/rom2_note"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/rom2_note"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/rom2_note"  />
+
+
+
+
+ PMux Accepted with new tuning mux_617
+ PMux Accepted with new tuning mux_674    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_1/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_1/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_1/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_1/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_1/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_3/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_3/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_3/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_3/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_3/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_4/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_4/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_4/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_4/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_4/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_5/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_5/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_5/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_5/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_5/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_5/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_6/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_10/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_10/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_10/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_10/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\u_speaker/u_DDS_10/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_10/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_11/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_11/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_11/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_11/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_11/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_12/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_12/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_12/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_12/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_13/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_speaker/u_DDS_13/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_speaker/u_DDS_13/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_speaker/u_DDS_13/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_speaker/u_DDS_13/fcw_r"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="d:/fpga_project/lattice_diamond/piano/speaker.v(306): Latch \u_speaker/rom1_4__I_6_i5 input is stuck at Zero&#xA;"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="d:/fpga_project/lattice_diamond/piano/speaker.v(485): Latch \u_speaker/rom2_4__I_7_i5 input is stuck at Zero&#xA;"  />
+Removed duplicate sequential element \u_speaker/u_DDS_13/fcw_r(11 bit), because it is equivalent to \u_speaker/u_DDS_1/fcw_r
+
+
+The number of registers created due to operator pipelining is 63.
+
+######## Missing driver on net \u_speaker/n687. Patching with GND.
+######## Missing driver on net \u_speaker/n688. Patching with GND.
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\u_speaker/u_DDS_2/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_7/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_8/fcw_r"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_speaker/u_DDS_9/fcw_r"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/dds.v(30): " arg1="\u_speaker/u_DDS_5/count__i0" arg2="d:/fpga_project/lattice_diamond/piano/dds.v" arg3="30"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/dds.v(20): " arg1="\u_speaker/u_DDS_5/fcw_r_ret6_i10" arg2="d:/fpga_project/lattice_diamond/piano/dds.v" arg3="20"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/piano.v(514): " arg1="note_i5" arg2="d:/fpga_project/lattice_diamond/piano/piano.v" arg3="514"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/speaker.v(368): " arg1="\u_speaker/yinjie_box_i2" arg2="d:/fpga_project/lattice_diamond/piano/speaker.v" arg3="368"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/fpga_project/lattice_diamond/piano/buzzer.v(105): " arg1="\u_buzzer/yinjie_box_i2" arg2="d:/fpga_project/lattice_diamond/piano/buzzer.v" arg3="105"  />
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret0_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret1_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret7_i1 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret8_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret6_i1 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret9_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret5_i1 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret7_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret4_i1 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret6_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_3/fcw_r_ret3_i1 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret5_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_3/fcw_r_ret2_i1 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret4_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_12/fcw_r_ret1_i1 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret3_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_12/fcw_r_ret0_i1 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret2_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i2 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret3_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i3 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret0_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i2 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret1_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret7_i2 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret4_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret7_i3 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret3_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret5_i2 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret7_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret5_i3 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret7_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i1 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret5_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_3/fcw_r_ret2_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret1_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_12/fcw_r_ret0_i1 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret9_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i3 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret5_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i2 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret9_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret4_i3 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret2_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret0_i1.
+GSR instance connected to net rst_n_c.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret6_i3 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret6_i7.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret6_i4 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret6_i8.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in piano_drc.log.
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   3385 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file piano_impl1.ngd.
+
+################### Begin Area Report (piano)######################
+Number of register bits => 1123 of 4635 (24 % )
+CCU2D => 520
+DP8KC => 6
+EHXPLLJ => 1
+FD1P3AX => 146
+FD1P3AY => 18
+FD1P3IX => 392
+FD1S1I => 8
+FD1S3AX => 120
+FD1S3AY => 17
+FD1S3DX => 360
+FD1S3IX => 61
+FD1S3JX => 1
+GSR => 1
+IB => 19
+INV => 1
+L6MUX21 => 50
+LUT4 => 1518
+OB => 2
+PFUMX => 141
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : u_speaker/u_DDS_13/clk__inv, loads : 115
+  Net : u_clk_pll/clk, loads : 9
+  Net : u_speaker/rom2_4__N_297, loads : 4
+  Net : u_speaker/rom1_4__N_289, loads : 4
+  Net : sys_clk_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 71
+Top 10 highest fanout Clock Enables:
+  Net : u_key_2/clk_N_168_enable_419, loads : 24
+  Net : u_key_12/clk_N_168_enable_108, loads : 24
+  Net : u_key_13/clk_N_168_enable_77, loads : 24
+  Net : u_key_state/clk_N_168_enable_505, loads : 24
+  Net : u_key_4/clk_N_168_enable_356, loads : 24
+  Net : u_key_9/clk_N_168_enable_201, loads : 24
+  Net : u_key_8/clk_N_168_enable_232, loads : 24
+  Net : u_key_1/clk_N_168_enable_450, loads : 24
+  Net : u_key_11/clk_N_168_enable_139, loads : 24
+  Net : u_key_7/clk_N_168_enable_263, loads : 24
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u_clk_pll/clk_N_168, loads : 999
+  Net : n19846, loads : 432
+  Net : u_speaker/u_DDS_13/pwm_out2_N_125, loads : 341
+  Net : count_note_2, loads : 104
+  Net : count_note_1, loads : 103
+  Net : count_note_3, loads : 98
+  Net : count_note_0, loads : 94
+  Net : count_note_4, loads : 60
+  Net : u_speaker/rom2_1, loads : 52
+  Net : u_speaker/rom2_0, loads : 48
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |  200.000 MHz|   37.097 MHz|     9 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 103.063  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 7.438  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "piano_impl1.ngd" -o "piano_impl1_map.ncd" -pr "piano_impl1.prf" -mp "piano_impl1.mrp" -lpf "D:/FPGA_Project/lattice_diamond/piano/impl1/piano_impl1.lpf" -lpf "D:/FPGA_Project/lattice_diamond/piano/piano.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: piano_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:   1123 out of  4635 (24%)
+      PFU registers:         1123 out of  4320 (26%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:      1285 out of  2160 (59%)
+      SLICEs as Logic/ROM:   1285 out of  2160 (59%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        520 out of  2160 (24%)
+   Number of LUT4s:        2557 out of  4320 (59%)
+      Number used as logic LUTs:        1517
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      1040
+      Number used as shift registers:     0
+   Number of PIO sites used: 21 + 4(JTAG) out of 105 (24%)
+   Number of block RAMs:  6 out of 10 (60%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  4
+     Net u_speaker/rom1_4__N_289: 4 loads, 4 rising, 0 falling (Driver: u_speaker/i12272_2_lut )
+     Net u_speaker/rom2_4__N_297: 4 loads, 4 rising, 0 falling (Driver: u_speaker/i2_3_lut )
+     Net clk: 682 loads, 7 rising, 675 falling (Driver: u_clk_pll/PLLInst_0 )
+     Net sys_clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO sys_clk )
+   Number of Clock Enables:  71
+     Net clk_N_168_enable_456: 3 loads, 3 LSLICEs
+     Net clk_N_168_enable_534: 3 loads, 3 LSLICEs
+     Net stat: 2 loads, 2 LSLICEs
+     Net u_speaker/clk_N_168_enable_524: 1 loads, 1 LSLICEs
+     Net u_speaker/clk_N_168_enable_523: 1 loads, 1 LSLICEs
+     Net clk_N_168_enable_512: 1 loads, 1 LSLICEs
+     Net u_speaker/en_1: 6 loads, 0 LSLICEs
+     Net u_speaker/en_0: 6 loads, 0 LSLICEs
+     Net clk_N_168_enable_507: 1 loads, 1 LSLICEs
+     Net clk_N_168_enable_518: 1 loads, 1 LSLICEs
+     Net u_key_state/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_state/clk_N_168_enable_505: 15 loads, 15 LSLICEs
+     Net u_key_state/clk_N_168_enable_493: 4 loads, 4 LSLICEs
+     Net clk_N_168_enable_533: 5 loads, 5 LSLICEs
+     Net u_buzzer/clk_N_168_enable_15: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_511: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_508: 2 loads, 2 LSLICEs
+     Net u_buzzer/clk_N_168_enable_509: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_510: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_513: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_514: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_515: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_516: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_517: 1 loads, 1 LSLICEs
+     Net u_buzzer/clk_N_168_enable_520: 2 loads, 2 LSLICEs
+     Net u_buzzer/clk_N_168_enable_522: 2 loads, 2 LSLICEs
+     Net u_key_5/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_5/clk_N_168_enable_325: 15 loads, 15 LSLICEs
+     Net u_key_5/clk_N_168_enable_320: 4 loads, 4 LSLICEs
+     Net u_key_8/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_8/clk_N_168_enable_232: 15 loads, 15 LSLICEs
+     Net u_key_8/clk_N_168_enable_227: 4 loads, 4 LSLICEs
+     Net u_key_10/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_10/clk_N_168_enable_170: 15 loads, 15 LSLICEs
+     Net u_key_10/clk_N_168_enable_165: 4 loads, 4 LSLICEs
+     Net u_key_11/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_11/clk_N_168_enable_139: 15 loads, 15 LSLICEs
+     Net u_key_11/clk_N_168_enable_134: 4 loads, 4 LSLICEs
+     Net u_key_12/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_12/clk_N_168_enable_108: 15 loads, 15 LSLICEs
+     Net u_key_12/clk_N_168_enable_103: 4 loads, 4 LSLICEs
+     Net u_key_2/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_2/clk_N_168_enable_419: 15 loads, 15 LSLICEs
+     Net u_key_2/clk_N_168_enable_414: 4 loads, 4 LSLICEs
+     Net u_key_13/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_13/clk_N_168_enable_77: 15 loads, 15 LSLICEs
+     Net u_key_13/clk_N_168_enable_72: 4 loads, 4 LSLICEs
+     Net u_key_9/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_9/clk_N_168_enable_201: 15 loads, 15 LSLICEs
+     Net u_key_9/clk_N_168_enable_196: 4 loads, 4 LSLICEs
+     Net u_key_1/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_1/clk_N_168_enable_450: 15 loads, 15 LSLICEs
+     Net u_key_1/clk_N_168_enable_445: 4 loads, 4 LSLICEs
+     Net u_key_7/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_7/clk_N_168_enable_263: 15 loads, 15 LSLICEs
+     Net u_key_7/clk_N_168_enable_258: 4 loads, 4 LSLICEs
+     Net u_key_6/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_6/clk_N_168_enable_294: 15 loads, 15 LSLICEs
+     Net u_key_6/clk_N_168_enable_289: 4 loads, 4 LSLICEs
+     Net u_key_3/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_3/clk_N_168_enable_387: 15 loads, 15 LSLICEs
+     Net u_key_3/clk_N_168_enable_382: 4 loads, 4 LSLICEs
+     Net u_key_15/clk_N_168_enable_462: 4 loads, 4 LSLICEs
+     Net u_key_15/clk_N_168_enable_531: 15 loads, 15 LSLICEs
+     Net u_key_15/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_4/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_4/clk_N_168_enable_356: 15 loads, 15 LSLICEs
+     Net u_key_4/clk_N_168_enable_351: 4 loads, 4 LSLICEs
+     Net u_key_14/key_flag_N_639: 1 loads, 1 LSLICEs
+     Net u_key_14/clk_N_168_enable_46: 15 loads, 15 LSLICEs
+     Net u_key_14/clk_N_168_enable_41: 4 loads, 4 LSLICEs
+   Number of LSRs:  31
+     Net n9292: 2 loads, 2 LSLICEs
+     Net u_speaker/pwm_out2_N_125: 179 loads, 179 LSLICEs
+     Net stat: 1 loads, 1 LSLICEs
+     Net n18644: 1 loads, 1 LSLICEs
+     Net u_speaker/n18622: 1 loads, 1 LSLICEs
+     Net u_speaker/n16916: 1 loads, 1 LSLICEs
+     Net u_speaker/n18643: 1 loads, 1 LSLICEs
+     Net u_speaker/n18621: 1 loads, 1 LSLICEs
+     Net u_speaker/n16930: 1 loads, 1 LSLICEs
+     Net u_speaker/n10964: 11 loads, 11 LSLICEs
+     Net n10972: 1 loads, 1 LSLICEs
+     Net u_key_state/n18788: 16 loads, 16 LSLICEs
+     Net n10969: 17 loads, 17 LSLICEs
+     Net n10968: 5 loads, 5 LSLICEs
+     Net u_buzzer/pwm_out1_N_122: 9 loads, 9 LSLICEs
+     Net u_buzzer/n15951: 1 loads, 1 LSLICEs
+     Net u_key_5/n18798: 16 loads, 16 LSLICEs
+     Net u_key_8/n18795: 16 loads, 16 LSLICEs
+     Net u_key_10/n18793: 16 loads, 16 LSLICEs
+     Net u_key_11/n18792: 16 loads, 16 LSLICEs
+     Net u_key_12/n18791: 16 loads, 16 LSLICEs
+     Net u_key_2/n18801: 16 loads, 16 LSLICEs
+     Net u_key_13/n18790: 16 loads, 16 LSLICEs
+     Net u_key_9/n18794: 16 loads, 16 LSLICEs
+     Net u_key_1/n18802: 16 loads, 16 LSLICEs
+     Net u_key_7/n18796: 16 loads, 16 LSLICEs
+     Net u_key_6/n18797: 16 loads, 16 LSLICEs
+     Net u_key_3/n18800: 16 loads, 16 LSLICEs
+     Net u_key_15/n18728: 16 loads, 16 LSLICEs
+     Net u_key_4/n18799: 16 loads, 16 LSLICEs
+     Net u_key_14/n18789: 16 loads, 16 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n19846: 436 loads
+     Net u_speaker/pwm_out2_N_125: 179 loads
+     Net count_note_2: 104 loads
+     Net count_note_1: 103 loads
+     Net count_note_3: 98 loads
+     Net count_note_0: 94 loads
+     Net count_note_4: 60 loads
+     Net rom2_1: 53 loads
+     Net rom2_0: 49 loads
+     Net u_speaker/rom2_2: 43 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 68 MB
+
+Dumping design to file piano_impl1_map.ncd.
+
+ncd2vdb "piano_impl1_map.ncd" ".vdbs/piano_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+
+trce -f "piano_impl1.mt" -o "piano_impl1.tw1" "piano_impl1_map.ncd" "piano_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file piano_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Aug 17 21:55:16 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o piano_impl1.tw1 -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml piano_impl1_map.ncd piano_impl1.prf 
+Design file:     piano_impl1_map.ncd
+Preference file: piano_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 40182 paths, 2 nets, and 8761 connections (90.40% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Wed Aug 17 21:55:17 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o piano_impl1.tw1 -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml piano_impl1_map.ncd piano_impl1.prf 
+Design file:     piano_impl1_map.ncd
+Preference file: piano_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 40182 paths, 2 nets, and 8964 connections (92.50% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 73 MB
+
+
+ldbanno "piano_impl1_map.ncd" -n Verilog -o "piano_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the piano_impl1_map design file.
+
+
+Loading design for application ldbanno from file piano_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design piano_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file piano_impl1_mapvo.vo
+Writing SDF timing to file piano_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 7 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 95 MB
+
+ldbanno "piano_impl1_map.ncd" -n VHDL -o "piano_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the piano_impl1_map design file.
+
+
+Loading design for application ldbanno from file piano_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design piano_impl1_map.ncd into .ldb format.
+Writing VHDL netlist to file piano_impl1_mapvho.vho
+Writing SDF timing to file piano_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 6 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 95 MB
+
+mpartrce -p "piano_impl1.p2t" -f "piano_impl1.p3t" -tf "piano_impl1.pt" "piano_impl1_map.ncd" "piano_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "piano_impl1_map.ncd"
+Wed Aug 17 21:55:31 2022
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 piano_impl1_map.ncd piano_impl1.dir/5_1.ncd piano_impl1.prf
+Preference file: piano_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file piano_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   21+4(JTAG)/280     9% used
+                  21+4(JTAG)/105     24% bonded
+
+   SLICE           1285/2160         59% used
+
+   GSR                1/1           100% used
+   EBR                6/10           60% used
+   PLL                1/2            50% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 4022
+Number of Connections: 9691
+
+Pin Constraint Summary:
+   21 out of 21 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk (driver: u_clk_pll/PLLInst_0, clk load #: 681)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    u_speaker/pwm_out2_N_125 (driver: SLICE_1229, clk load #: 0, sr load #: 179, ce load #: 0)
+    n10969 (driver: SLICE_532, clk load #: 0, sr load #: 17, ce load #: 0)
+    u_key_state/n18788 (driver: u_key_state/SLICE_683, clk load #: 0, sr load #: 16, ce load #: 0)
+    u_key_5/n18798 (driver: u_key_5/SLICE_653, clk load #: 0, sr load #: 16, ce load #: 0)
+    u_key_8/n18795 (driver: u_key_8/SLICE_671, clk load #: 0, sr load #: 16, ce load #: 0)
+    u_key_10/n18793 (driver: u_key_10/SLICE_599, clk load #: 0, sr load #: 16, ce load #: 0)
+    u_key_11/n18792 (driver: u_key_11/SLICE_605, clk load #: 0, sr load #: 16, ce load #: 0)
+    u_key_12/n18791 (driver: u_key_12/SLICE_611, clk load #: 0, sr load #: 16, ce load #: 0)
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+............
+Finished Placer Phase 0.  REAL time: 4 secs 
+
+Starting Placer Phase 1.
+.....................
+Placer score = 508102.
+Finished Placer Phase 1.  REAL time: 20 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  504703
+Finished Placer Phase 2.  REAL time: 21 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 1 out of 2 (50%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk" from CLKOP on comp "u_clk_pll/PLLInst_0" on PLL site "LPLL", clk load = 681
+  SECONDARY "u_speaker/pwm_out2_N_125" from F0 on comp "SLICE_1229" on site "R20C15A", clk load = 0, ce load = 0, sr load = 179
+  SECONDARY "n10969" from F1 on comp "SLICE_532" on site "R20C15D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "u_key_state/n18788" from F1 on comp "u_key_state/SLICE_683" on site "R9C31B", clk load = 0, ce load = 0, sr load = 16
+  SECONDARY "u_key_5/n18798" from F1 on comp "u_key_5/SLICE_653" on site "R14C2A", clk load = 0, ce load = 0, sr load = 16
+  SECONDARY "u_key_8/n18795" from F1 on comp "u_key_8/SLICE_671" on site "R20C10D", clk load = 0, ce load = 0, sr load = 16
+  SECONDARY "u_key_10/n18793" from F1 on comp "u_key_10/SLICE_599" on site "R20C10A", clk load = 0, ce load = 0, sr load = 16
+  SECONDARY "u_key_11/n18792" from F1 on comp "u_key_11/SLICE_605" on site "R12C15C", clk load = 0, ce load = 0, sr load = 16
+  SECONDARY "u_key_12/n18791" from F1 on comp "u_key_12/SLICE_611" on site "R12C15B", clk load = 0, ce load = 0, sr load = 16
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   21 + 4(JTAG) out of 280 (8.9%) PIO sites used.
+   21 + 4(JTAG) out of 105 (23.8%) bonded PIO sites used.
+   Number of PIO comps: 21; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 2 / 26 (  7%) | 2.5V       | -         |
+| 1        | 2 / 26 (  7%) | 2.5V       | -         |
+| 2        | 7 / 28 ( 25%) | 2.5V       | -         |
+| 3        | 4 / 7 ( 57%)  | 2.5V       | -         |
+| 4        | 4 / 8 ( 50%)  | 2.5V       | -         |
+| 5        | 2 / 10 ( 20%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 20 secs 
+
+Dumping design to file piano_impl1.dir/5_1.ncd.
+
+0 connections routed; 9691 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=u_speaker/rom1_4__N_289 loads=4 clock_loads=4&#xA;   Signal=u_speaker/rom2_4__N_297 loads=4 clock_loads=4"  />
+
+Completed router resource preassignment. Real time: 24 secs 
+
+Start NBR router at 21:55:55 08/17/22
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 21:55:55 08/17/22
+
+Start NBR section for initial routing at 21:55:56 08/17/22
+Level 1, iteration 1
+0(0.00%) conflict; 7057(72.82%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.469ns/0.000ns; real time: 26 secs 
+Level 2, iteration 1
+5(0.00%) conflicts; 7037(72.61%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.823ns/0.000ns; real time: 26 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 7035(72.59%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.494ns/0.000ns; real time: 26 secs 
+Level 4, iteration 1
+174(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 28 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 21:55:59 08/17/22
+Level 1, iteration 1
+1(0.00%) conflict; 245(2.53%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 29 secs 
+Level 4, iteration 1
+70(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 29 secs 
+Level 4, iteration 2
+28(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 29 secs 
+Level 4, iteration 3
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 30 secs 
+Level 4, iteration 4
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 30 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 30 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 30 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 31 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 31 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 31 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 31 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 31 secs 
+Level 4, iteration 12
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 31 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 21:56:02 08/17/22
+
+Start NBR section for re-routing at 21:56:03 08/17/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.152ns/0.000ns; real time: 32 secs 
+
+Start NBR section for post-routing at 21:56:03 08/17/22
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 4.152ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=u_speaker/rom1_4__N_289 loads=4 clock_loads=4&#xA;   Signal=u_speaker/rom2_4__N_297 loads=4 clock_loads=4"  />
+
+Total CPU time 34 secs 
+Total REAL time: 36 secs 
+Completely routed.
+End of route.  9691 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file piano_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 4.152
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.377
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 34 secs 
+Total REAL time to completion: 37 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "piano_impl1.pt" -o "piano_impl1.twr" "piano_impl1.ncd" "piano_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Aug 17 21:56:09 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o piano_impl1.twr -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml piano_impl1.ncd piano_impl1.prf 
+Design file:     piano_impl1.ncd
+Preference file: piano_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 40182 paths, 2 nets, and 9028 connections (93.16% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Wed Aug 17 21:56:09 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o piano_impl1.twr -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml piano_impl1.ncd piano_impl1.prf 
+Design file:     piano_impl1.ncd
+Preference file: piano_impl1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 40182 paths, 2 nets, and 9025 connections (93.13% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 75 MB
+
+
+iotiming  "piano_impl1.ncd" "piano_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+ibisgen "piano_impl1.pad" "D:/lattice diamond/diamond/3.12/cae_library/ibis/machxo2.ibs"   
+IBIS Models Generator: Lattice Diamond (64-bit) 3.12.0.240.2
+
+Wed Aug 17 21:56:15 2022
+
+Comp: key[0]
+ Site: C8
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[10]
+ Site: L3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[11]
+ Site: N5
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[12]
+ Site: P6
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[13]
+ Site: N6
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[14]
+ Site: P7
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[1]
+ Site: B8
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[2]
+ Site: E3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[3]
+ Site: F3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[4]
+ Site: G3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[5]
+ Site: H3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[6]
+ Site: J2
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[7]
+ Site: J3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[8]
+ Site: K2
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key[9]
+ Site: K3
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key_pa
+ Site: N4
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key_state
+ Site: L14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: pwm_out1
+ Site: P8
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: pwm_out2
+ Site: N8
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: rst_n
+ Site: N14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: sys_clk
+ Site: C1
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Created design models.
+
+
+Generating: D:\FPGA_Project\lattice_diamond\piano\impl1\IBIS\piano_impl1.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />
+
+ldbanno "piano_impl1.ncd" -n Verilog  -o "piano_impl1_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the piano_impl1 design file.
+
+
+Loading design for application ldbanno from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design piano_impl1.ncd into .ldb format.
+Loading preferences from piano_impl1.prf.
+Writing Verilog netlist to file piano_impl1_vo.vo
+Writing SDF timing to file piano_impl1_vo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 5 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 101 MB
+
+ldbanno "piano_impl1.ncd" -n VHDL -o "piano_impl1_vho.vho"         -w -neg 
+ldbanno: version Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the piano_impl1 design file.
+
+
+Loading design for application ldbanno from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design piano_impl1.ncd into .ldb format.
+Loading preferences from piano_impl1.prf.
+Writing VHDL netlist to file piano_impl1_vho.vho
+Writing SDF timing to file piano_impl1_vho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 5 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 100 MB
+
+tmcheck -par "piano_impl1.par" 
+
+bitgen -f "piano_impl1.t2b" -w "piano_impl1.ncd"  "piano_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from piano_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "piano_impl1.bit".
+Total CPU Time: 3 secs 
+Total REAL Time: 4 secs 
+Peak Memory Usage: 282 MB
+
+tmcheck -par "piano_impl1.par" 
+
+bitgen -f "piano_impl1.t2b" -w "piano_impl1.ncd"  -jedec "piano_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file piano_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from piano_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "piano_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 283 MB

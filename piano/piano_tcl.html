@@ -1,0 +1,130 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn220815193123"></A><B><U><big>pn220815193123</big></U></B>
+#Start recording tcl command: 8/15/2022 19:18:04
+#Project Location: D:/FPGA_Project/lattice_diamond/piano; Project name: piano
+prj_project new -name "piano" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "D:/FPGA_Project/lattice_diamond/PWM2/buzzer.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll.v" "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll_tmpl.v" "D:/FPGA_Project/lattice_diamond/PWM2/DDS.v" "D:/FPGA_Project/lattice_diamond/PWM2/key.v" "D:/FPGA_Project/lattice_diamond/PWM2/piano.v" "D:/FPGA_Project/lattice_diamond/PWM2/piano_tb.v" "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom.v" "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom_tmpl.v" "D:/FPGA_Project/lattice_diamond/PWM2/speaker.v" "D:/FPGA_Project/lattice_diamond/PWM2/tb_sin_rom_tmpl.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/buzzer.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll_tmpl.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/DDS.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/key.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/piano.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/piano_tb.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom_tmpl.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/speaker.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/tb_sin_rom_tmpl.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/piano.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/buzzer.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/clk_pll.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/DDS.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/key.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/piano.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/sin_rom.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/speaker.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 8/15/2022 19:31:23
+
+
+
+<A name="pn220817141808"></A><B><U><big>pn220817141808</big></U></B>
+#Start recording tcl command: 8/17/2022 11:39:19
+#Project Location: D:/FPGA_Project/lattice_diamond/piano; Project name: piano
+prj_project open "D:/FPGA_Project/lattice_diamond/piano/piano.ldf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 8/17/2022 14:18:08
+
+
+
+<A name="pn220817151415"></A><B><U><big>pn220817151415</big></U></B>
+#Start recording tcl command: 8/17/2022 14:30:55
+#Project Location: D:/FPGA_Project/lattice_diamond/piano; Project name: piano
+prj_project open "D:/FPGA_Project/lattice_diamond/piano/piano.ldf"
+prj_run Export -impl impl1
+#Stop recording: 8/17/2022 15:14:15
+
+
+
+<A name="pn220817215306"></A><B><U><big>pn220817215306</big></U></B>
+#Start recording tcl command: 8/17/2022 21:51:10
+#Project Location: D:/FPGA_Project/lattice_diamond/piano; Project name: piano
+prj_project open "D:/FPGA_Project/lattice_diamond/piano/piano.ldf"
+#Stop recording: 8/17/2022 21:53:06
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

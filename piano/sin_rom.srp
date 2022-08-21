@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.12.0.240.2
+Mon Jul 25 17:56:30 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : D:\lattice diamond\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n sin_rom -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type romblk -device LCMXO2-4000HC -addr_width 11 -data_width 12 -num_words 2048 -outdata REGISTERED -cascade -1 -resetmode SYNC -sync_reset -memfile d:/fpga_project/lattice_diamond/pwm/wave_data/sin_2048.mem -memformat hex 
+    Circuit name     : sin_rom
+    Module type      : EBR_ROM
+    Module Version   : 5.4
+    Ports            : 
+	Inputs       : Address[10:0], OutClock, OutClockEn, Reset
+	Outputs      : Q[11:0]
+    I/O buffer       : not inserted
+    Memory file      : d:/fpga_project/lattice_diamond/pwm/wave_data/sin_2048.mem
+    EDIF output      : sin_rom.edn
+    Verilog output   : sin_rom.v
+    Verilog template : sin_rom_tmpl.v
+    Verilog testbench: tb_sin_rom_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : sin_rom.srp
+    Element Usage    :
+          DP8KC : 3
+    Estimated Resource Usage:
+            EBR : 3

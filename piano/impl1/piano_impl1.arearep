@@ -1,0 +1,484 @@
+----------------------------------------------------------------------
+Report for cell piano.TECH
+Register bits:  1123 of 4635 (24.229%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       520          100.0
+                              DP8KC         6          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX       146          100.0
+                            FD1P3AY        18          100.0
+                            FD1P3IX       392          100.0
+                             FD1S1I         8          100.0
+                            FD1S3AX       120          100.0
+                            FD1S3AY        17          100.0
+                            FD1S3DX       360          100.0
+                            FD1S3IX        61          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB        19          100.0
+                                INV         1          100.0
+                            L6MUX21        50          100.0
+                               LUT4      1518          100.0
+                                 OB         2          100.0
+                              PFUMX       141          100.0
+SUB MODULES
+                                DDS         1
+                             DDS_U0         1
+                             DDS_U1         1
+                            DDS_U10         1
+                            DDS_U11         1
+                             DDS_U2         1
+                             DDS_U3         1
+                             DDS_U4         1
+                             DDS_U5         1
+                             DDS_U6         1
+                             DDS_U7         1
+                             DDS_U8         1
+                             DDS_U9         1
+                             buzzer         1
+                            clk_pll         1
+                                key         1
+                            key_U13         1
+                            key_U14         1
+                            key_U15         1
+                            key_U16         1
+                            key_U17         1
+                            key_U18         1
+                            key_U19         1
+                            key_U20         1
+                            key_U21         1
+                            key_U22         1
+                            key_U23         1
+                            key_U24         1
+                            key_U25         1
+                            key_U26         1
+                            key_U27         1
+                            sin_rom         1
+                        sin_rom_U12         1
+                            speaker         1
+                              TOTAL      3416
+----------------------------------------------------------------------
+Report for cell speaker.v1
+Instance Path : u_speaker
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       196           37.7
+                              DP8KC         6          100.0
+                            FD1P3AX         3            2.1
+                            FD1P3AY         1            5.6
+                             FD1S1I         8          100.0
+                            FD1S3AX        96           80.0
+                            FD1S3DX       342           95.0
+                            FD1S3IX        13           21.3
+                            L6MUX21        23           46.0
+                               LUT4       761           50.1
+                              PFUMX        76           53.9
+SUB MODULES
+                                DDS         1
+                             DDS_U0         1
+                             DDS_U1         1
+                            DDS_U10         1
+                            DDS_U11         1
+                             DDS_U2         1
+                             DDS_U3         1
+                             DDS_U4         1
+                             DDS_U5         1
+                             DDS_U6         1
+                             DDS_U7         1
+                             DDS_U8         1
+                             DDS_U9         1
+                            sin_rom         1
+                        sin_rom_U12         1
+                              TOTAL      1540
+----------------------------------------------------------------------
+Report for cell DDS.v1
+Instance Path : u_speaker.u_DDS_9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX         3            2.5
+                            FD1S3DX        24            6.7
+                              TOTAL        39
+----------------------------------------------------------------------
+Report for cell DDS_U0.v1
+Instance Path : u_speaker.u_DDS_8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX         3            2.5
+                            FD1S3DX        24            6.7
+                              TOTAL        39
+----------------------------------------------------------------------
+Report for cell DDS_U1.v1
+Instance Path : u_speaker.u_DDS_7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            2.5
+                            FD1S3AX         7            5.8
+                            FD1S3DX        25            6.9
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell DDS_U2.v1
+Instance Path : u_speaker.u_DDS_6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX         6            5.0
+                            FD1S3DX        23            6.4
+                               LUT4         5            0.3
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell DDS_U3.v1
+Instance Path : u_speaker.u_DDS_5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX         6            5.0
+                            FD1S3DX        24            6.7
+                               LUT4         4            0.3
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell DDS_U4.v1
+Instance Path : u_speaker.u_DDS_4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1S3AX         9            7.5
+                            FD1S3DX        25            6.9
+                               LUT4         5            0.3
+                              TOTAL        56
+----------------------------------------------------------------------
+Report for cell DDS_U5.v1
+Instance Path : u_speaker.u_DDS_3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1S3AX         8            6.7
+                            FD1S3DX        25            6.9
+                               LUT4         4            0.3
+                              TOTAL        54
+----------------------------------------------------------------------
+Report for cell DDS_U6.v1
+Instance Path : u_speaker.u_DDS_2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX         7            5.8
+                            FD1S3DX        24            6.7
+                               LUT4         5            0.3
+                              TOTAL        48
+----------------------------------------------------------------------
+Report for cell DDS_U7.v1
+Instance Path : u_speaker.u_DDS_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        22            4.2
+                            FD1S3AX        10            8.3
+                            FD1S3DX        25            6.9
+                            FD1S3IX         1            1.6
+                               LUT4        15            1.0
+                              PFUMX         2            1.4
+                              TOTAL        75
+----------------------------------------------------------------------
+Report for cell DDS_U8.v1
+Instance Path : u_speaker.u_DDS_13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3DX        24            6.7
+                               LUT4         2            0.1
+                              TOTAL        38
+----------------------------------------------------------------------
+Report for cell DDS_U9.v1
+Instance Path : u_speaker.u_DDS_12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1S3AX         7            5.8
+                            FD1S3DX        25            6.9
+                               LUT4         4            0.3
+                              TOTAL        53
+----------------------------------------------------------------------
+Report for cell DDS_U10.v1
+Instance Path : u_speaker.u_DDS_11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX        10            8.3
+                            FD1S3DX        24            6.7
+                               LUT4         1            0.1
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell DDS_U11.v1
+Instance Path : u_speaker.u_DDS_10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12            2.3
+                            FD1S3AX         9            7.5
+                            FD1S3DX        23            6.4
+                            FD1S3IX         1            1.6
+                               LUT4         4            0.3
+                              TOTAL        49
+----------------------------------------------------------------------
+Report for cell sin_rom.v1
+Instance Path : u_speaker.sin2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         3           50.0
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell sin_rom_U12.v1
+Instance Path : u_speaker.sin1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         3           50.0
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell key.v1
+Instance Path : u_key_state
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76
+----------------------------------------------------------------------
+Report for cell buzzer.v1
+Instance Path : u_buzzer
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        20            3.8
+                            FD1P3AX        19           13.0
+                            FD1P3AY         1            5.6
+                            FD1S3DX        18            5.0
+                            FD1S3JX         1          100.0
+                            L6MUX21         1            2.0
+                               LUT4       128            8.4
+                              PFUMX        17           12.1
+                              TOTAL       205
+----------------------------------------------------------------------
+Report for cell key_U17.v1
+Instance Path : u_key_5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        29            1.9
+                              TOTAL        81
+----------------------------------------------------------------------
+Report for cell key_U14.v1
+Instance Path : u_key_8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        30            2.0
+                              PFUMX         1            0.7
+                              TOTAL        83
+----------------------------------------------------------------------
+Report for cell key_U27.v1
+Instance Path : u_key_10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        28            1.8
+                              TOTAL        80
+----------------------------------------------------------------------
+Report for cell key_U26.v1
+Instance Path : u_key_11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        31            2.0
+                              TOTAL        83
+----------------------------------------------------------------------
+Report for cell key_U25.v1
+Instance Path : u_key_12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76
+----------------------------------------------------------------------
+Report for cell key_U20.v1
+Instance Path : u_key_2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76
+----------------------------------------------------------------------
+Report for cell key_U24.v1
+Instance Path : u_key_13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76
+----------------------------------------------------------------------
+Report for cell key_U13.v1
+Instance Path : u_key_9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        29            1.9
+                              TOTAL        81
+----------------------------------------------------------------------
+Report for cell key_U21.v1
+Instance Path : u_key_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        31            2.0
+                              TOTAL        83
+----------------------------------------------------------------------
+Report for cell key_U15.v1
+Instance Path : u_key_7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        31            2.0
+                              TOTAL        83
+----------------------------------------------------------------------
+Report for cell key_U16.v1
+Instance Path : u_key_6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        27            1.8
+                              TOTAL        79
+----------------------------------------------------------------------
+Report for cell key_U19.v1
+Instance Path : u_key_3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76
+----------------------------------------------------------------------
+Report for cell key_U22.v1
+Instance Path : u_key_15
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76
+----------------------------------------------------------------------
+Report for cell key_U18.v1
+Instance Path : u_key_4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        30            2.0
+                              TOTAL        82
+----------------------------------------------------------------------
+Report for cell clk_pll.v1
+Instance Path : u_clk_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                                INV         1          100.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell key_U23.v1
+Instance Path : u_key_14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            3.3
+                            FD1P3AX         7            4.8
+                            FD1P3AY         1            5.6
+                            FD1P3IX        24            6.1
+                            FD1S3AX         1            0.8
+                            FD1S3AY         1            5.9
+                            FD1S3IX         1            1.6
+                               LUT4        24            1.6
+                              TOTAL        76

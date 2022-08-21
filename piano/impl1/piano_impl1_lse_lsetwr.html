@@ -1,0 +1,270 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Aug 17 21:55:11 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     piano
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk]
+            2996 items scored, 2996 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 10.978ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \u_buzzer/CNT_2225__i6  (from clk +)
+   Destination:    FD1S3JX    D              \u_buzzer/PWM_89  (to clk -)
+
+   Delay:                  13.318ns  (31.0% logic, 69.0% route), 9 logic levels.
+
+ Constraint Details:
+
+     13.318ns data_path \u_buzzer/CNT_2225__i6 to \u_buzzer/PWM_89 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 10.978ns
+
+ Path Details: \u_buzzer/CNT_2225__i6 to \u_buzzer/PWM_89
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_buzzer/CNT_2225__i6 (from clk)
+Route         5   e 1.462                                  CNT[6]
+LUT4        ---     0.493              A to Z              \u_buzzer/CNT_17__I_0_91_i13_2_lut_rep_566
+Route         2   e 1.141                                  \u_buzzer/n18748
+LUT4        ---     0.493              A to Z              \u_buzzer/i11746_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17037
+LUT4        ---     0.493              D to Z              \u_buzzer/i11759_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17050
+LUT4        ---     0.493              D to Z              \u_buzzer/i11778_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17069
+LUT4        ---     0.493              D to Z              \u_buzzer/i12351_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17411
+LUT4        ---     0.493              C to Z              \u_buzzer/i12352_2_lut_3_lut
+Route         1   e 0.941                                  \u_buzzer/n17091
+MUXL5       ---     0.233             SD to Z              \u_buzzer/CNT_17__I_0_91_i34
+Route         1   e 0.941                                  \u_buzzer/n34
+LUT4        ---     0.493              A to Z              \u_buzzer/i7439_2_lut
+Route         1   e 0.941                                  \u_buzzer/PWM_N_764
+                  --------
+                   13.318  (31.0% logic, 69.0% route), 9 logic levels.
+
+
+Error:  The following path violates requirements by 10.914ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \u_buzzer/CNT_2225__i5  (from clk +)
+   Destination:    FD1S3JX    D              \u_buzzer/PWM_89  (to clk -)
+
+   Delay:                  13.254ns  (31.1% logic, 68.9% route), 9 logic levels.
+
+ Constraint Details:
+
+     13.254ns data_path \u_buzzer/CNT_2225__i5 to \u_buzzer/PWM_89 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 10.914ns
+
+ Path Details: \u_buzzer/CNT_2225__i5 to \u_buzzer/PWM_89
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_buzzer/CNT_2225__i5 (from clk)
+Route         4   e 1.398                                  CNT[5]
+LUT4        ---     0.493              A to Z              \u_buzzer/CNT_17__I_0_91_i11_2_lut
+Route         2   e 1.141                                  \u_buzzer/n11
+LUT4        ---     0.493              B to Z              \u_buzzer/i11746_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17037
+LUT4        ---     0.493              D to Z              \u_buzzer/i11759_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17050
+LUT4        ---     0.493              D to Z              \u_buzzer/i11778_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17069
+LUT4        ---     0.493              D to Z              \u_buzzer/i12351_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17411
+LUT4        ---     0.493              C to Z              \u_buzzer/i12352_2_lut_3_lut
+Route         1   e 0.941                                  \u_buzzer/n17091
+MUXL5       ---     0.233             SD to Z              \u_buzzer/CNT_17__I_0_91_i34
+Route         1   e 0.941                                  \u_buzzer/n34
+LUT4        ---     0.493              A to Z              \u_buzzer/i7439_2_lut
+Route         1   e 0.941                                  \u_buzzer/PWM_N_764
+                  --------
+                   13.254  (31.1% logic, 68.9% route), 9 logic levels.
+
+
+Error:  The following path violates requirements by 10.778ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \u_buzzer/CNT_2225__i3  (from clk +)
+   Destination:    FD1S3JX    D              \u_buzzer/PWM_89  (to clk -)
+
+   Delay:                  13.118ns  (31.5% logic, 68.5% route), 9 logic levels.
+
+ Constraint Details:
+
+     13.118ns data_path \u_buzzer/CNT_2225__i3 to \u_buzzer/PWM_89 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 10.778ns
+
+ Path Details: \u_buzzer/CNT_2225__i3 to \u_buzzer/PWM_89
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_buzzer/CNT_2225__i3 (from clk)
+Route         5   e 1.462                                  CNT[3]
+LUT4        ---     0.493              A to Z              \u_buzzer/i11737_3_lut_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17028
+LUT4        ---     0.493              D to Z              \u_buzzer/i11746_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17037
+LUT4        ---     0.493              D to Z              \u_buzzer/i11759_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17050
+LUT4        ---     0.493              D to Z              \u_buzzer/i11778_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17069
+LUT4        ---     0.493              D to Z              \u_buzzer/i12351_4_lut
+Route         1   e 0.941                                  \u_buzzer/n17411
+LUT4        ---     0.493              C to Z              \u_buzzer/i12352_2_lut_3_lut
+Route         1   e 0.941                                  \u_buzzer/n17091
+MUXL5       ---     0.233             SD to Z              \u_buzzer/CNT_17__I_0_91_i34
+Route         1   e 0.941                                  \u_buzzer/n34
+LUT4        ---     0.493              A to Z              \u_buzzer/i7439_2_lut
+Route         1   e 0.941                                  \u_buzzer/PWM_N_764
+                  --------
+                   13.118  (31.5% logic, 68.5% route), 9 logic levels.
+
+Warning: 13.478 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |     5.000 ns|    26.956 ns|     9 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n3759                                   |      18|    1870|     62.42%
+                                        |        |        |
+n15507                                  |       1|    1870|     62.42%
+                                        |        |        |
+n15506                                  |       1|    1530|     51.07%
+                                        |        |        |
+\u_buzzer/n15310                        |       1|    1224|     40.85%
+                                        |        |        |
+\u_buzzer/n15309                        |       1|    1190|     39.72%
+                                        |        |        |
+n15505                                  |       1|    1190|     39.72%
+                                        |        |        |
+\u_buzzer/n15308                        |       1|    1020|     34.05%
+                                        |        |        |
+\u_buzzer/n15311                        |       1|    1020|     34.05%
+                                        |        |        |
+n15504                                  |       1|     850|     28.37%
+                                        |        |        |
+\u_buzzer/n15307                        |       1|     714|     23.83%
+                                        |        |        |
+\u_buzzer/n15312                        |       1|     680|     22.70%
+                                        |        |        |
+n15503                                  |       1|     544|     18.16%
+                                        |        |        |
+\u_buzzer/n15313                        |       1|     340|     11.35%
+                                        |        |        |
+n15502                                  |       1|     306|     10.21%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 2996  Score: 39199091
+
+Constraints cover  48563 paths, 4282 nets, and 10377 connections (94.9% coverage)
+
+
+Peak memory: 107532288 bytes, TRCE: 16154624 bytes, DLYMAN: 819200 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

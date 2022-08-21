@@ -1,0 +1,30 @@
+#Start recording tcl command: 8/15/2022 19:18:04
+#Project Location: D:/FPGA_Project/lattice_diamond/piano; Project name: piano
+prj_project new -name "piano" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "D:/FPGA_Project/lattice_diamond/PWM2/buzzer.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll.v" "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll_tmpl.v" "D:/FPGA_Project/lattice_diamond/PWM2/DDS.v" "D:/FPGA_Project/lattice_diamond/PWM2/key.v" "D:/FPGA_Project/lattice_diamond/PWM2/piano.v" "D:/FPGA_Project/lattice_diamond/PWM2/piano_tb.v" "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom.v" "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom_tmpl.v" "D:/FPGA_Project/lattice_diamond/PWM2/speaker.v" "D:/FPGA_Project/lattice_diamond/PWM2/tb_sin_rom_tmpl.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/buzzer.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/clk_pll_tmpl.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/DDS.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/key.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/piano.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/piano_tb.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/sin_rom_tmpl.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/speaker.v"
+prj_src remove "D:/FPGA_Project/lattice_diamond/PWM2/tb_sin_rom_tmpl.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/piano.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/buzzer.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/clk_pll.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/DDS.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/key.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/piano.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/sin_rom.v"
+prj_src add "D:/FPGA_Project/lattice_diamond/piano/speaker.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 8/15/2022 19:31:23

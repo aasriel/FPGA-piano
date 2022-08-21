@@ -1,0 +1,401 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Aug 17 21:55:04 2022
+
+
+Command Line:  synthesis -f piano_impl1_lattice.synproj -gui -msgset D:/FPGA_Project/lattice_diamond/piano/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/FPGA_Project/lattice_diamond/piano (searchpath added)
+-p D:/lattice diamond/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p D:/FPGA_Project/lattice_diamond/piano/impl1 (searchpath added)
+-p D:/FPGA_Project/lattice_diamond/piano (searchpath added)
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/piano.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/buzzer.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/clk_pll.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/DDS.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/key.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/sin_rom.v
+Verilog design file = D:/FPGA_Project/lattice_diamond/piano/speaker.v
+NGD file = piano_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING - synthesis: Setting piano as the top-level module. To specify the top-level module explicitly, use the -top option.
+Technology check ok...
+
+Analyzing Verilog file D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/piano.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/buzzer.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/clk_pll.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/dds.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/key.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/sin_rom.v. VERI-1482
+Analyzing Verilog file d:/fpga_project/lattice_diamond/piano/speaker.v. VERI-1482
+Analyzing Verilog file D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): piano
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/piano.v(1): compiling module piano. VERI-1018
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/clk_pll.v(8): compiling module clk_pll. VERI-1018
+INFO - synthesis: D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=4,CLKOP_DIV=11,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=10,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/speaker.v(1): compiling module speaker. VERI-1018
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/sin_rom.v(8): compiling module sin_rom. VERI-1018
+INFO - synthesis: D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_2. VERI-1018
+INFO - synthesis: D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
+INFO - synthesis: D:/lattice diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_3. VERI-1018
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/dds.v(1): compiling module DDS. VERI-1018
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/key.v(1): compiling module key. VERI-1018
+INFO - synthesis: d:/fpga_project/lattice_diamond/piano/buzzer.v(1): compiling module buzzer. VERI-1018
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/lattice diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = piano.
+WARNING - synthesis: Bit 0 of Register \u_speaker/rom2_note is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/rom2_note is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/rom2_note is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/rom2_note is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/rom2_note is stuck at Zero
+
+
+
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_1/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_1/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_1/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_1/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_1/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_3/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_3/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_3/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_3/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_3/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_4/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_4/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_4/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_4/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_4/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_5/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_5/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_5/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_5/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_5/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_5/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_6/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_10/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_10/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_10/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_10/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \u_speaker/u_DDS_10/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_10/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_11/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_11/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_11/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_11/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_11/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_12/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_12/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_12/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_12/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_13/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_speaker/u_DDS_13/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_speaker/u_DDS_13/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u_speaker/u_DDS_13/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u_speaker/u_DDS_13/fcw_r is stuck at Zero
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/speaker.v(306): Latch \u_speaker/rom1_4__I_6_i5 input is stuck at Zero
+
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/speaker.v(485): Latch \u_speaker/rom2_4__I_7_i5 input is stuck at Zero
+
+Removed duplicate sequential element \u_speaker/u_DDS_13/fcw_r(11 bit), because it is equivalent to \u_speaker/u_DDS_1/fcw_r
+
+
+The number of registers created due to operator pipelining is 63.
+
+######## Missing driver on net \u_speaker/n687. Patching with GND.
+######## Missing driver on net \u_speaker/n688. Patching with GND.
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \u_speaker/u_DDS_2/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_7/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_8/fcw_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_speaker/u_DDS_9/fcw_r is stuck at Zero
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/dds.v(30): Register \u_speaker/u_DDS_5/count__i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/dds.v(20): Register \u_speaker/u_DDS_5/fcw_r_ret6_i10 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/piano.v(514): Register note_i5 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/speaker.v(368): Register \u_speaker/yinjie_box_i2 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/fpga_project/lattice_diamond/piano/buzzer.v(105): Register \u_buzzer/yinjie_box_i2 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret0_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret1_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret7_i1 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret8_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret6_i1 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret9_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret5_i1 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret7_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret4_i1 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret6_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_3/fcw_r_ret3_i1 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret5_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_3/fcw_r_ret2_i1 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret4_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_12/fcw_r_ret1_i1 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret3_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_12/fcw_r_ret0_i1 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret2_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i2 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret3_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i3 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret0_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i2 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret1_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret7_i2 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret4_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret7_i3 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret3_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret5_i2 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret7_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret5_i3 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret7_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i1 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret5_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_3/fcw_r_ret2_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret1_i1.
+Duplicate register/latch removal. \u_speaker/u_DDS_12/fcw_r_ret0_i1 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret9_i2.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret9_i3 is a one-to-one match with \u_speaker/u_DDS_6/fcw_r_ret5_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i2 is a one-to-one match with \u_speaker/u_DDS_4/fcw_r_ret9_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_6/fcw_r_ret4_i3 is a one-to-one match with \u_speaker/u_DDS_3/fcw_r_ret2_i3.
+Duplicate register/latch removal. \u_speaker/u_DDS_4/fcw_r_ret8_i1 is a one-to-one match with \u_speaker/u_DDS_12/fcw_r_ret0_i1.
+GSR instance connected to net rst_n_c.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret6_i3 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret6_i7.
+Duplicate register/latch removal. \u_speaker/u_DDS_5/fcw_r_ret6_i4 is a one-to-one match with \u_speaker/u_DDS_5/fcw_r_ret6_i8.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in piano_drc.log.
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lattice diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file piano_impl1.ngd.
+
+################### Begin Area Report (piano)######################
+Number of register bits => 1123 of 4635 (24 % )
+CCU2D => 520
+DP8KC => 6
+EHXPLLJ => 1
+FD1P3AX => 146
+FD1P3AY => 18
+FD1P3IX => 392
+FD1S1I => 8
+FD1S3AX => 120
+FD1S3AY => 17
+FD1S3DX => 360
+FD1S3IX => 61
+FD1S3JX => 1
+GSR => 1
+IB => 19
+INV => 1
+L6MUX21 => 50
+LUT4 => 1518
+OB => 2
+PFUMX => 141
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : u_speaker/u_DDS_13/clk__inv, loads : 115
+  Net : u_clk_pll/clk, loads : 9
+  Net : u_speaker/rom2_4__N_297, loads : 4
+  Net : u_speaker/rom1_4__N_289, loads : 4
+  Net : sys_clk_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 71
+Top 10 highest fanout Clock Enables:
+  Net : u_key_2/clk_N_168_enable_419, loads : 24
+  Net : u_key_12/clk_N_168_enable_108, loads : 24
+  Net : u_key_13/clk_N_168_enable_77, loads : 24
+  Net : u_key_state/clk_N_168_enable_505, loads : 24
+  Net : u_key_4/clk_N_168_enable_356, loads : 24
+  Net : u_key_9/clk_N_168_enable_201, loads : 24
+  Net : u_key_8/clk_N_168_enable_232, loads : 24
+  Net : u_key_1/clk_N_168_enable_450, loads : 24
+  Net : u_key_11/clk_N_168_enable_139, loads : 24
+  Net : u_key_7/clk_N_168_enable_263, loads : 24
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u_clk_pll/clk_N_168, loads : 999
+  Net : n19846, loads : 432
+  Net : u_speaker/u_DDS_13/pwm_out2_N_125, loads : 341
+  Net : count_note_2, loads : 104
+  Net : count_note_1, loads : 103
+  Net : count_note_3, loads : 98
+  Net : count_note_0, loads : 94
+  Net : count_note_4, loads : 60
+  Net : u_speaker/rom2_1, loads : 52
+  Net : u_speaker/rom2_0, loads : 48
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |  200.000 MHz|   37.097 MHz|     9 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 103.063  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 7.438  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
